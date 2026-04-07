@@ -44,7 +44,7 @@ export default function About() {
               <p data-reveal-blur className="text-white/55 text-base leading-[2] mt-12 max-w-md">
                 Com acesso exclusivo aos maiores eventos de negócios da região,
                 imersões técnicas aplicadas, networking ativo e educação contínua
-                de mercado.
+                de mercados.
               </p>
             </div>
 
