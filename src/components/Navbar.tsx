@@ -23,6 +23,7 @@ export default function Navbar() {
   return (
     <>
       <nav
+        aria-label="Navegação principal"
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 mix-blend-difference ${
           scrolled ? "" : ""
         }`}
@@ -63,6 +64,8 @@ export default function Navbar() {
           {/* Mobile Toggle */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={menuOpen}
             className="md:hidden relative z-10 text-white mix-blend-difference"
           >
             {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

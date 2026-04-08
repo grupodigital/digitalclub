@@ -120,16 +120,12 @@ export default function Benefits() {
       </div>
 
       {/* Horizontal scroll area */}
-      <div
-        ref={scrollRef}
-        className="relative"
-        style={{ height: `${benefits.length * 100}vh` }}
-      >
+      <div ref={scrollRef} className="relative" style={{ height: `${benefits.length * 100}vh` }}>
         <div className="sticky top-0 h-screen overflow-hidden">
           <div
             ref={containerRef}
             className="flex items-center h-full gap-8 px-8 md:px-12 will-change-transform"
-            style={{ width: `${benefits.length * 80}vw` }}
+            style={{ width: `${benefits.length * 70}vw` }}
           >
             {benefits.map((b) => (
               <div

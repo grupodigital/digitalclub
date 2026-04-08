@@ -8,8 +8,20 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/obrigado", "/api/"],
+      },
+      {
+        userAgent: "Googlebot",
+        allow: "/",
+        disallow: ["/obrigado", "/api/"],
+      },
+      {
+        userAgent: "Bingbot",
+        allow: "/",
+        disallow: ["/obrigado", "/api/"],
       },
     ],
     sitemap: `${siteUrl}/sitemap.xml`,
+    host: siteUrl,
   };
 }

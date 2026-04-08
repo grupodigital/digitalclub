@@ -103,7 +103,7 @@ export default function CTAFinal() {
               Preencha seus dados para avaliação. Retorno em até 48h.
             </p>
 
-            <form onSubmit={handleSubmit} className="space-y-0">
+            <form onSubmit={handleSubmit} className="space-y-0" aria-label="Formulário de candidatura ao Digital Club">
               {[
                 { name: "name", placeholder: "Nome completo", type: "text" },
                 { name: "email", placeholder: "Melhor e-mail", type: "email" },

@@ -30,14 +30,16 @@ export default function Footer() {
           <span className="text-white/[0.35] text-[11px] tracking-wider">
             &copy; {new Date().getFullYear()} Digital Club
           </span>
-          <div className="flex items-center gap-8">
-            <a href="#" className="link-underline text-white/[0.35] hover:text-white/30 text-[11px] uppercase tracking-wider transition-colors">
-              Termos
-            </a>
-            <a href="#" className="link-underline text-white/[0.35] hover:text-white/30 text-[11px] uppercase tracking-wider transition-colors">
-              Privacidade
-            </a>
-          </div>
+          <nav aria-label="Links legais">
+            <div className="flex items-center gap-8">
+              <a href="#" className="link-underline text-white/[0.35] hover:text-white/30 text-[11px] uppercase tracking-wider transition-colors">
+                Termos
+              </a>
+              <a href="#" className="link-underline text-white/[0.35] hover:text-white/30 text-[11px] uppercase tracking-wider transition-colors" rel="nofollow">
+                Privacidade
+              </a>
+            </div>
+          </nav>
         </div>
       </div>
     </footer>

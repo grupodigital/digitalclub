@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070"
-          alt=""
+          alt="Evento de negócios e networking empresarial"
           fill
           className={`object-cover transition-all duration-[3s] ease-out ${imgLoaded ? "opacity-40 scale-100" : "opacity-0 scale-105"}`}
           priority
@@ -45,7 +45,8 @@ export default function Hero() {
 
         {/* Center — headline */}
         <div className="flex-1 flex items-center -mt-10">
-          <div>
+          <h1 className="sr-only">Digital Club - O Ecossistema de Experiências do Norte</h1>
+          <div aria-hidden="true">
             {/* Each line animates separately */}
             <div className="overflow-hidden z-[1] relative">
               <p className={`font-display font-bold text-[13vw] md:text-[10vw] lg:text-[8.5vw] text-white uppercase leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.3s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
