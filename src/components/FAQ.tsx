@@ -8,12 +8,12 @@ const faqs = [
   {
     question: "O que é o Digital Club?",
     answer:
-      "O Digital Club é um ecossistema exclusivo de experiências para CEOs, Fundadores e Donos de negócios no Norte de Portugal. Fundado em 2023, reúne mais de 100 membros com acesso aos maiores eventos de negócios, imersões técnicas, networking ativo e educação contínua. É o clube de quem constrói o Norte.",
+      "O Digital Club é um ecossistema exclusivo de experiências para CEOs, Fundadores e Donos de negócios no Amazonas, Brasil. Fundado em 2023, reúne mais de 100 membros com acesso aos maiores eventos de negócios, imersões técnicas, networking ativo e educação contínua. É o clube de quem constrói o Amazonas.",
   },
   {
     question: "Para quem é o Digital Club?",
     answer:
-      "O Digital Club é exclusivo para CEOs, Fundadores e Donos de negócios que querem crescimento real através de acesso, contexto e conexões certas. É para líderes que já entenderam que o networking estratégico e a formação contínua são essenciais para escalar os seus negócios no Norte de Portugal.",
+      "O Digital Club é exclusivo para CEOs, Fundadores e Donos de negócios que querem crescimento real através de acesso, contexto e conexões certas. É para líderes que já entenderam que o networking estratégico e a formação contínua são essenciais para escalar os seus negócios no Amazonas, Brasil.",
   },
   {
     question: "O que está incluído na adesão ao Digital Club?",
@@ -23,12 +23,12 @@ const faqs = [
   {
     question: "Quais eventos fazem parte do Digital Club?",
     answer:
-      "Os membros têm acesso VIP a três grandes eventos: o DSX (Digital Summit Experience), focado em Transformação Digital; o Amazon IA, sobre Inteligência Artificial aplicada a negócios; e o Leaders AI Conference, sobre Liderança e Tecnologia. Todos os eventos decorrem no Norte de Portugal e contam com os maiores nomes do mercado.",
+      "Os membros têm acesso VIP a três grandes eventos: o DSX (Digital Summit Experience), focado em Transformação Digital; o Amazon IA, sobre Inteligência Artificial aplicada a negócios; e o Leaders AI Conference, sobre Liderança e Tecnologia. Todos os eventos acontecem no Amazonas, Brasil, e contam com os maiores nomes do mercado.",
   },
   {
     question: "O que são as imersões do Digital Club?",
     answer:
-      "São 4 imersões técnicas aprofundadas nas áreas de Negócios, Gestão, Marketing e Vendas. Cada membro recebe 3 ingressos por imersão (12 no total), podendo levar membros da sua equipa. As imersões são práticas e aplicáveis, com conteúdo de especialistas reconhecidos no mercado.",
+      "São 4 imersões técnicas aprofundadas nas áreas de Negócios, Gestão, Marketing e Vendas. Cada membro recebe 3 ingressos por imersão (12 no total), podendo levar membros da sua equipe. As imersões são práticas e aplicáveis, com conteúdo de especialistas reconhecidos no mercado.",
   },
   {
     question: "O que é a plataforma Digital Educa?",
@@ -38,7 +38,7 @@ const faqs = [
   {
     question: "Como posso fazer parte do Digital Club?",
     answer:
-      "Para se candidatar ao Digital Club, preencha o formulário com os seus dados (nome, email, WhatsApp, empresa e cargo). A equipa fará uma avaliação e entrará em contacto em até 48 horas. A candidatura é sem compromisso e os dados são tratados com total segurança.",
+      "Para se candidatar ao Digital Club, preencha o formulário com os seus dados (nome, email, WhatsApp, empresa e cargo). A equipe fará uma avaliação e entrará em contato em até 48 horas. A candidatura é sem compromisso e os dados são tratados com total segurança.",
   },
 ];
 

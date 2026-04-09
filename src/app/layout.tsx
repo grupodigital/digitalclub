@@ -25,22 +25,22 @@ export const metadata: Metadata = {
     template: "%s | Digital Club",
   },
   description:
-    "Club exclusivo para CEOs, Fundadores e Donos de negócios no Norte de Portugal. Acesso aos maiores eventos de negócios, imersões técnicas em Marketing, Vendas e Gestão, networking ativo e educação contínua. Junte-se a mais de 100 membros.",
+    "Club exclusivo para CEOs, Fundadores e Donos de negócios no Amazonas, Brasil. Acesso aos maiores eventos de negócios, imersões técnicas em Marketing, Vendas e Gestão, networking ativo e educação contínua. Junte-se a mais de 100 membros.",
   keywords: [
     "Digital Club",
-    "Digital Club Portugal",
+    "Digital Club Brasil",
     "networking empresarial",
-    "networking empresarial Porto",
-    "eventos de negócios Portugal",
+    "networking empresarial Manaus",
+    "eventos de negócios Brasil",
     "eventos de negócios Norte",
-    "CEOs Portugal",
+    "CEOs Brasil",
     "fundadores startups",
     "imersões de negócios",
     "imersões técnicas",
     "educação contínua empresarial",
-    "norte de Portugal",
+    "Amazonas Brasil",
     "clube empresarial",
-    "clube de negócios Porto",
+    "clube de negócios Manaus",
     "DSX Digital Summit Experience",
     "Amazon IA evento",
     "Leaders AI Conference",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     "eventos VIP empresariais",
     "comunidade empresarial",
     "Digital Educa",
-    "formação executiva Porto",
+    "formação executiva Manaus",
     "liderança empresarial",
     "transformação digital",
     "inteligência artificial negócios",
@@ -67,12 +67,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "pt_PT",
+    locale: "pt_BR",
     url: SITE_URL,
     siteName: "Digital Club",
     title: "Digital Club | O Ecossistema de Experiências do Norte",
     description:
-      "Club exclusivo para CEOs, Fundadores e Donos de negócios. Eventos VIP, imersões técnicas, networking ativo e educação contínua no Norte de Portugal.",
+      "Club exclusivo para CEOs, Fundadores e Donos de negócios. Eventos VIP, imersões técnicas, networking ativo e educação contínua no Amazonas, Brasil.",
     images: [
       {
         url: "/opengraph-image",
@@ -104,18 +104,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
     languages: {
-      "pt-PT": SITE_URL,
+      "pt-BR": SITE_URL,
     },
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || undefined,
   },
   other: {
-    "geo.region": "PT-13",
-    "geo.placename": "Porto",
-    "geo.position": "41.1579;-8.6291",
-    "ICBM": "41.1579, -8.6291",
-    "content-language": "pt-PT",
+    "geo.region": "BR-AM",
+    "geo.placename": "Manaus",
+    "geo.position": "-3.1190;-60.0217",
+    "ICBM": "-3.1190, -60.0217",
+    "content-language": "pt-BR",
   },
 };
 
@@ -130,7 +130,7 @@ export default function RootLayout({
     "@type": "Organization",
     "@id": `${SITE_URL}/#organization`,
     name: "Digital Club",
-    alternateName: "Digital Club Portugal",
+    alternateName: "Digital Club Brasil",
     url: SITE_URL,
     logo: {
       "@type": "ImageObject",
@@ -140,7 +140,7 @@ export default function RootLayout({
     },
     image: `${SITE_URL}/opengraph-image`,
     description:
-      "O Digital Club é um ecossistema exclusivo de experiências para CEOs, Fundadores e Donos de negócios no Norte de Portugal. Fundado em 2023, reúne mais de 100 membros com acesso aos maiores eventos de negócios, imersões técnicas em Marketing, Vendas, Gestão e Negócios, networking estratégico e educação contínua através da plataforma Digital Educa.",
+      "O Digital Club é um ecossistema exclusivo de experiências para CEOs, Fundadores e Donos de negócios no Amazonas, Brasil. Fundado em 2023, reúne mais de 100 membros com acesso aos maiores eventos de negócios, imersões técnicas em Marketing, Vendas, Gestão e Negócios, networking estratégico e educação contínua através da plataforma Digital Educa.",
     foundingDate: "2023",
     numberOfEmployees: {
       "@type": "QuantitativeValue",
@@ -149,16 +149,16 @@ export default function RootLayout({
     },
     areaServed: {
       "@type": "Place",
-      name: "Norte de Portugal",
+      name: "Amazonas, Brasil",
       address: {
         "@type": "PostalAddress",
-        addressRegion: "Porto",
-        addressCountry: "PT",
+        addressRegion: "Amazonas",
+        addressCountry: "BR",
       },
       geo: {
         "@type": "GeoCoordinates",
-        latitude: 41.1579,
-        longitude: -8.6291,
+        latitude: -3.119,
+        longitude: -60.0217,
       },
     },
     knowsAbout: [
@@ -200,7 +200,7 @@ export default function RootLayout({
             "@type": "Service",
             name: "Digital Educa",
             description:
-              "Plataforma exclusiva de educação contínua com conteúdos dos eventos, aulas de especialistas e material para toda a equipa.",
+              "Plataforma exclusiva de educação contínua com conteúdos dos eventos, aulas de especialistas e material para toda a equipe.",
           },
         },
         {
@@ -226,11 +226,11 @@ export default function RootLayout({
     alternateName: "Digital Club — O Ecossistema de Experiências do Norte",
     url: SITE_URL,
     description:
-      "Club exclusivo para CEOs, Fundadores e Donos de negócios no Norte de Portugal. Eventos VIP, imersões técnicas, networking e educação contínua.",
+      "Club exclusivo para CEOs, Fundadores e Donos de negócios no Amazonas, Brasil. Eventos VIP, imersões técnicas, networking e educação contínua.",
     publisher: {
       "@id": `${SITE_URL}/#organization`,
     },
-    inLanguage: "pt-PT",
+    inLanguage: "pt-BR",
   };
 
   // WebPage Schema with Speakable (for Google AI Overview)
@@ -241,10 +241,10 @@ export default function RootLayout({
     url: SITE_URL,
     name: "Digital Club | O Ecossistema de Experiências do Norte",
     description:
-      "O Digital Club é um ecossistema exclusivo de experiências para CEOs, Fundadores e Donos de negócios no Norte de Portugal. Acesso a eventos VIP, imersões técnicas, networking e educação contínua.",
+      "O Digital Club é um ecossistema exclusivo de experiências para CEOs, Fundadores e Donos de negócios no Amazonas, Brasil. Acesso a eventos VIP, imersões técnicas, networking e educação contínua.",
     isPartOf: { "@id": `${SITE_URL}/#website` },
     about: { "@id": `${SITE_URL}/#organization` },
-    inLanguage: "pt-PT",
+    inLanguage: "pt-BR",
     speakable: {
       "@type": "SpeakableSpecification",
       cssSelector: ["article", "#about", "#faq"],
@@ -260,17 +260,17 @@ export default function RootLayout({
     "@type": "BusinessEvent",
     name: "DSX — Digital Summit Experience",
     description:
-      "O DSX é o maior evento de Transformação Digital do Norte de Portugal, organizado pelo Digital Club. Palestras, workshops e networking com os maiores nomes do mercado.",
+      "O DSX é o maior evento de Transformação Digital do Amazonas, organizado pelo Digital Club. Palestras, workshops e networking com os maiores nomes do mercado.",
     organizer: { "@id": `${SITE_URL}/#organization` },
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     eventStatus: "https://schema.org/EventScheduled",
     location: {
       "@type": "Place",
-      name: "Norte de Portugal",
+      name: "Amazonas, Brasil",
       address: {
         "@type": "PostalAddress",
-        addressRegion: "Porto",
-        addressCountry: "PT",
+        addressRegion: "Amazonas",
+        addressCountry: "BR",
       },
     },
     offers: {
@@ -287,7 +287,7 @@ export default function RootLayout({
       "@type": "BusinessAudience",
       audienceType: "CEOs, Fundadores e Donos de negócios",
     },
-    inLanguage: "pt-PT",
+    inLanguage: "pt-BR",
   };
 
   const amazonIAEventSchema = {
@@ -295,17 +295,17 @@ export default function RootLayout({
     "@type": "BusinessEvent",
     name: "Amazon IA — Inteligência Artificial",
     description:
-      "Evento dedicado à Inteligência Artificial aplicada a negócios e estratégias de mercado, organizado pelo Digital Club no Norte de Portugal.",
+      "Evento dedicado à Inteligência Artificial aplicada a negócios e estratégias de mercado, organizado pelo Digital Club no Amazonas, Brasil.",
     organizer: { "@id": `${SITE_URL}/#organization` },
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     eventStatus: "https://schema.org/EventScheduled",
     location: {
       "@type": "Place",
-      name: "Norte de Portugal",
+      name: "Amazonas, Brasil",
       address: {
         "@type": "PostalAddress",
-        addressRegion: "Porto",
-        addressCountry: "PT",
+        addressRegion: "Amazonas",
+        addressCountry: "BR",
       },
     },
     offers: {
@@ -322,7 +322,7 @@ export default function RootLayout({
       "@type": "BusinessAudience",
       audienceType: "CEOs, Fundadores e Donos de negócios",
     },
-    inLanguage: "pt-PT",
+    inLanguage: "pt-BR",
   };
 
   const leadersAIEventSchema = {
@@ -330,17 +330,17 @@ export default function RootLayout({
     "@type": "BusinessEvent",
     name: "Leaders AI Conference",
     description:
-      "Conferência de Liderança e Tecnologia organizada pelo Digital Club. Focada no futuro dos negócios, com os maiores líderes e especialistas do Norte de Portugal.",
+      "Conferência de Liderança e Tecnologia organizada pelo Digital Club. Focada no futuro dos negócios, com os maiores líderes e especialistas do Amazonas, Brasil.",
     organizer: { "@id": `${SITE_URL}/#organization` },
     eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     eventStatus: "https://schema.org/EventScheduled",
     location: {
       "@type": "Place",
-      name: "Norte de Portugal",
+      name: "Amazonas, Brasil",
       address: {
         "@type": "PostalAddress",
-        addressRegion: "Porto",
-        addressCountry: "PT",
+        addressRegion: "Amazonas",
+        addressCountry: "BR",
       },
     },
     offers: {
@@ -357,7 +357,7 @@ export default function RootLayout({
       "@type": "BusinessAudience",
       audienceType: "CEOs, Fundadores e Donos de negócios",
     },
-    inLanguage: "pt-PT",
+    inLanguage: "pt-BR",
   };
 
   // FAQ Schema (matches visible FAQ section on the page)
@@ -370,7 +370,7 @@ export default function RootLayout({
         name: "O que é o Digital Club?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "O Digital Club é um ecossistema exclusivo de experiências para CEOs, Fundadores e Donos de negócios no Norte de Portugal. Fundado em 2023, reúne mais de 100 membros empresariais com acesso aos maiores eventos de negócios, imersões técnicas aplicadas, networking estratégico e educação contínua de mercados. É o clube de quem constrói o Norte.",
+          text: "O Digital Club é um ecossistema exclusivo de experiências para CEOs, Fundadores e Donos de negócios no Amazonas, Brasil. Fundado em 2023, reúne mais de 100 membros empresariais com acesso aos maiores eventos de negócios, imersões técnicas aplicadas, networking estratégico e educação contínua de mercados. É o clube de quem constrói o Amazonas.",
         },
       },
       {
@@ -378,7 +378,7 @@ export default function RootLayout({
         name: "Para quem é o Digital Club?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "O Digital Club é exclusivo para CEOs, Fundadores e Donos de negócios que querem crescimento real através de acesso, contexto e conexões certas. É para líderes que já entenderam que o networking estratégico e a formação contínua são essenciais para escalar os seus negócios no Norte de Portugal.",
+          text: "O Digital Club é exclusivo para CEOs, Fundadores e Donos de negócios que querem crescimento real através de acesso, contexto e conexões certas. É para líderes que já entenderam que o networking estratégico e a formação contínua são essenciais para escalar os seus negócios no Amazonas, Brasil.",
         },
       },
       {
@@ -394,7 +394,7 @@ export default function RootLayout({
         name: "Quais eventos fazem parte do Digital Club?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Os membros têm acesso VIP a três grandes eventos: o DSX (Digital Summit Experience), focado em Transformação Digital; o Amazon IA, sobre Inteligência Artificial aplicada a negócios; e o Leaders AI Conference, sobre Liderança e Tecnologia. Todos os eventos decorrem no Norte de Portugal.",
+          text: "Os membros têm acesso VIP a três grandes eventos: o DSX (Digital Summit Experience), focado em Transformação Digital; o Amazon IA, sobre Inteligência Artificial aplicada a negócios; e o Leaders AI Conference, sobre Liderança e Tecnologia. Todos os eventos acontecem no Amazonas, Brasil.",
         },
       },
       {
@@ -402,7 +402,7 @@ export default function RootLayout({
         name: "O que são as imersões do Digital Club?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "São 4 imersões técnicas aprofundadas nas áreas de Negócios, Gestão, Marketing e Vendas. Cada membro recebe 3 ingressos por imersão (12 no total), podendo levar membros da sua equipa. As imersões são práticas e aplicáveis, com conteúdo de especialistas reconhecidos.",
+          text: "São 4 imersões técnicas aprofundadas nas áreas de Negócios, Gestão, Marketing e Vendas. Cada membro recebe 3 ingressos por imersão (12 no total), podendo levar membros da sua equipe. As imersões são práticas e aplicáveis, com conteúdo de especialistas reconhecidos.",
         },
       },
       {
@@ -418,7 +418,7 @@ export default function RootLayout({
         name: "Como posso fazer parte do Digital Club?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Para se candidatar, preencha o formulário com os seus dados (nome, email, WhatsApp, empresa e cargo). A equipa fará uma avaliação e entrará em contacto em até 48 horas. A candidatura é sem compromisso e os dados são tratados com total segurança.",
+          text: "Para se candidatar, preencha o formulário com os seus dados (nome, email, WhatsApp, empresa e cargo). A equipe fará uma avaliação e entrará em contato em até 48 horas. A candidatura é sem compromisso e os dados são tratados com total segurança.",
         },
       },
     ],
@@ -450,7 +450,7 @@ export default function RootLayout({
   ];
 
   return (
-    <html lang="pt-PT" className={`${inter.variable} ${oswald.variable} antialiased`}>
+    <html lang="pt-BR" className={`${inter.variable} ${oswald.variable} antialiased`}>
       <body className="min-h-screen">
         {allSchemas.map((schema, i) => (
           <script

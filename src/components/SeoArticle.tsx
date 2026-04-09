@@ -29,7 +29,7 @@ export default function SeoArticle() {
               <p>
                 O <strong className="text-white/70">Digital Club</strong> é um ecossistema exclusivo
                 de experiências para <strong className="text-white/70">CEOs, Fundadores e Donos de
-                negócios no Norte de Portugal</strong>. Fundado em 2023, reúne mais de 100 membros
+                negócios no Amazonas, Brasil</strong>. Fundado em 2023, reúne mais de 100 membros
                 empresariais com acesso aos maiores eventos de negócios, imersões técnicas aplicadas,
                 networking estratégico e educação contínua de mercados.
               </p>
@@ -42,13 +42,13 @@ export default function SeoArticle() {
                 (Liderança e Tecnologia). Além dos eventos, o clube oferece 4 imersões técnicas anuais
                 em Negócios, Gestão, Marketing e Vendas, jantar exclusivo com líderes do mercado e
                 acesso à plataforma <strong className="text-white/70">Digital Educa</strong> com
-                conteúdos e formação contínua para toda a equipa.
+                conteúdos e formação contínua para toda a equipe.
               </p>
 
               <p>
                 A adesão inclui 9 ingressos VIP, 12 ingressos para imersões, acesso antecipado a
                 pré-eventos e a possibilidade de levar +1 da empresa sem custo adicional. O Digital
-                Club está sediado na região do Porto e é o ecossistema de referência para líderes que
+                Club está sediado no Amazonas e é o ecossistema de referência para líderes que
                 valorizam acesso exclusivo, networking estratégico e crescimento real dos seus negócios.
               </p>
             </div>
