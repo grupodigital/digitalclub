@@ -1,67 +1,40 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import SmoothScroll from "@/components/SmoothScroll";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Benefits from "@/components/Benefits";
+import SocialProof from "@/components/SocialProof";
+import CTAFinal from "@/components/CTAFinal";
+import FAQ from "@/components/FAQ";
+import SeoArticle from "@/components/SeoArticle";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Digital Club | Em Breve",
+  title: "Digital Club | O Ecossistema de Experiências do Norte",
   description:
-    "O Digital Club está preparando algo novo. Em breve, o ecossistema de experiências para CEOs, Fundadores e Donos de negócios no Brasil.",
+    "O Digital Club é um ecossistema exclusivo para CEOs, Fundadores e Donos de negócios no Amazonas, Brasil. Eventos VIP (DSX, Amazon IA, Leaders AI Conference), 4 imersões técnicas, networking estratégico e plataforma Digital Educa. Mais de 100 membros desde 2023.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
-export default function ComingSoon() {
+export default function Home() {
   return (
-    <div className="grain relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6">
-      {/* Background radial glow */}
-      <div
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse 60% 50% at 50% 40%, rgba(179,123,75,0.08) 0%, transparent 70%)",
-        }}
-      />
-
-      {/* Animated accent line top */}
-      <div className="absolute top-0 left-0 right-0 h-px animate-line-expand bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
-
-      {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center">
-        {/* Logo */}
-        <div className="animate-hero-up animate-hero-up-d1 mb-12">
-          <Image
-            src="/logo.svg"
-            alt="Digital Club"
-            width={180}
-            height={60}
-            priority
-            className="opacity-90"
-          />
-        </div>
-
-        {/* Divider */}
-        <div className="animate-hero-up animate-hero-up-d2 mb-10 h-px w-24 bg-gradient-to-r from-transparent via-accent to-transparent" />
-
-        {/* Main heading */}
-        <h1 className="animate-hero-up animate-hero-up-d2 font-display text-fluid-lg uppercase tracking-wider text-white/90">
-          Em Breve
-        </h1>
-
-        {/* Subtitle */}
-        <p className="animate-hero-up animate-hero-up-d3 mt-6 max-w-md text-base leading-relaxed text-white/50 sm:text-lg">
-          Estamos preparando algo extraordinário.
-          <br />
-          O ecossistema de experiências volta em breve.
-        </p>
-
-        {/* Divider */}
-        <div className="animate-hero-up animate-hero-up-d4 mt-10 h-px w-16 bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
-
-        {/* Contact hint */}
-        <p className="animate-hero-up animate-hero-up-d5 mt-8 text-xs tracking-widest text-white/25 uppercase">
-          Digital Club &mdash; Amazonas
-        </p>
+    <SmoothScroll>
+      <div className="grain">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Benefits />
+          <SocialProof />
+          <CTAFinal />
+          <FAQ />
+          <SeoArticle />
+        </main>
+        <Footer />
       </div>
-
-      {/* Animated accent line bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-px animate-line-expand bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
-    </div>
+    </SmoothScroll>
   );
 }
