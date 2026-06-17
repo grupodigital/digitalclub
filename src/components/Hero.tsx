@@ -45,22 +45,24 @@ export default function Hero() {
 
         {/* Center — headline */}
         <div className="flex-1 flex items-center -mt-10">
-          <h1 className="sr-only">Digital Club - O Ecossistema de Experiências do Norte</h1>
+          <h1 className="sr-only">
+            Digital Club — Comunidade exclusiva para CEOs, donos e fundadores que movem o Norte do Brasil
+          </h1>
           <div aria-hidden="true">
             {/* Each line animates separately */}
             <div className="overflow-hidden z-[1] relative">
-              <p className={`font-display font-bold text-[13vw] md:text-[10vw] lg:text-[8.5vw] text-white uppercase leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.3s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
-                O ecossistema
+              <p className={`font-display font-bold text-[9vw] md:text-[8vw] lg:text-[7vw] text-white uppercase leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.3s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
+                O ambiente certo
               </p>
             </div>
             <div className="overflow-hidden z-[2] relative">
-              <p className={`font-display font-bold text-[13vw] md:text-[10vw] lg:text-[8.5vw] uppercase leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.5s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
-                <span className="text-gradient">de experiências</span>
+              <p className={`font-display font-bold text-[9vw] md:text-[8vw] lg:text-[7vw] uppercase leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.5s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
+                <span className="text-gradient">para quem move</span>
               </p>
             </div>
             <div className="overflow-hidden z-[1] relative">
-              <p className={`font-display font-bold text-[13vw] md:text-[10vw] lg:text-[8.5vw] text-white uppercase leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.7s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
-                do Norte<span className="text-accent">.</span>
+              <p className={`font-display font-bold text-[9vw] md:text-[8vw] lg:text-[7vw] text-white uppercase leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.7s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
+                o Norte do Brasil<span className="text-accent">.</span>
               </p>
             </div>
           </div>
@@ -71,33 +73,21 @@ export default function Hero() {
           className={`pb-10 transition-all duration-1000 delay-[1.4s] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
         >
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 border-t border-white/[0.08] pt-8">
-            {/* Left info */}
+            {/* Left — positioning */}
             <div className="flex items-center gap-8">
-              <p className="text-white/50 text-sm max-w-xs leading-relaxed">
-                Feito para CEO&apos;s, Fundadores e Donos de negócios.
+              <p className="text-white/50 text-sm md:text-[15px] max-w-xl leading-relaxed">
+                O Digital Club é uma comunidade exclusiva para CEOs, donos e
+                fundadores que buscam acesso, experiências premium e conexões
+                estratégicas de alto valor.
               </p>
-            </div>
-
-            {/* Center — mini stats */}
-            <div className="hidden md:flex items-center gap-10">
-              {[
-                { val: "3+", label: "Eventos" },
-                { val: "4", label: "Imersões" },
-                { val: "100+", label: "Membros" },
-              ].map((s) => (
-                <div key={s.label} className="text-center">
-                  <span className="text-accent font-display font-bold text-2xl block">{s.val}</span>
-                  <span className="text-white/30 text-[10px] uppercase tracking-[0.2em]">{s.label}</span>
-                </div>
-              ))}
             </div>
 
             {/* Right — CTA */}
             <a
               href="#cta"
-              className="btn-fill inline-flex items-center gap-4 px-10 py-5 border border-accent/40 text-accent hover:text-white text-[11px] uppercase tracking-[0.3em] font-medium transition-colors duration-500 w-fit group"
+              className="btn-fill inline-flex items-center gap-4 px-10 py-5 border border-accent/40 text-accent hover:text-white text-[11px] uppercase tracking-[0.3em] font-medium transition-colors duration-500 w-fit group whitespace-nowrap"
             >
-              Conheça o Digital Club
+              Solicite sua aplicação
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

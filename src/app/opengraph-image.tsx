@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Digital Club - O Ecossistema de Experiências do Norte";
+export const alt = "Digital Club — Comunidade exclusiva para quem move o Norte do Brasil";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -112,18 +112,18 @@ export default async function Image() {
           <span
             style={{
               color: "#ffffff",
-              fontSize: "72px",
+              fontSize: "68px",
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: "-0.02em",
               lineHeight: 1.1,
             }}
           >
-            O Ecossistema
+            O ambiente certo
           </span>
           <span
             style={{
-              fontSize: "72px",
+              fontSize: "68px",
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: "-0.02em",
@@ -133,19 +133,19 @@ export default async function Image() {
               color: "transparent",
             }}
           >
-            de Experiências
+            para quem move
           </span>
           <span
             style={{
               color: "#ffffff",
-              fontSize: "72px",
+              fontSize: "68px",
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: "-0.02em",
               lineHeight: 1.1,
             }}
           >
-            do Norte
+            o Norte do Brasil
           </span>
         </div>
 
@@ -155,12 +155,12 @@ export default async function Image() {
             color: "rgba(255,255,255,0.5)",
             fontSize: "18px",
             marginTop: "32px",
-            maxWidth: "600px",
+            maxWidth: "640px",
             textAlign: "center",
             lineHeight: 1.6,
           }}
         >
-          Club exclusivo para CEOs, Fundadores e Donos de negócios.
+          Comunidade exclusiva para CEOs, donos e fundadores. Ingresso por curadoria.
         </p>
 
         {/* Bottom stats */}
@@ -178,9 +178,9 @@ export default async function Image() {
           }}
         >
           {[
-            { val: "3+", label: "Eventos VIP" },
-            { val: "4", label: "Imersões" },
-            { val: "100+", label: "Membros" },
+            { val: "Acesso", label: "Ambientes certos" },
+            { val: "Conexões", label: "De alto valor" },
+            { val: "Curadoria", label: "Ingresso exclusivo" },
           ].map((s) => (
             <div
               key={s.label}

@@ -23,7 +23,7 @@ export default function About() {
               <div data-line-grow className="h-px bg-white/[0.06]" />
             </div>
             <span className="text-accent/80 text-[11px] uppercase tracking-[0.4em]">
-              O clube
+              O valor
             </span>
           </div>
 
@@ -32,20 +32,27 @@ export default function About() {
             {/* Left — Headline */}
             <div>
               <h2 data-reveal className="font-display font-bold text-fluid-xl text-white uppercase leading-[0.95]">
-                O clube
+                Relações certas
                 <br />
-                de quem
+                geram
                 <br />
-                <span className="text-gradient">constrói</span>
+                <span className="text-gradient">oportunidades</span>
                 <br />
-                o Norte.
+                maiores.
               </h2>
 
-              <p data-reveal-blur className="text-white/55 text-base leading-[2] mt-12 max-w-md">
-                Com acesso exclusivo aos maiores eventos de negócios da região,
-                imersões técnicas aplicadas, networking ativo e educação contínua
-                de mercados.
-              </p>
+              <div data-reveal-blur className="space-y-6 mt-12 max-w-md">
+                <p className="text-white/55 text-base leading-[2]">
+                  O Digital Club reúne empresários que compartilham nível, visão e
+                  ambição em uma comunidade pensada para gerar acesso, fortalecer
+                  conexões e abrir novos caminhos de crescimento.
+                </p>
+                <p className="text-white/55 text-base leading-[2]">
+                  Cada encontro, experiência e aproximação é desenhado para ampliar
+                  a presença do membro, fortalecer sua influência e aproximá-lo das
+                  conversas que movem o mercado.
+                </p>
+              </div>
             </div>
 
             {/* Right — Staggered images with parallax + scale */}
@@ -82,7 +89,7 @@ export default function About() {
               {/* Floating accent label */}
               <div data-reveal-left className="absolute -bottom-6 left-4 bg-accent px-6 py-3">
                 <span className="text-white text-[11px] uppercase tracking-[0.3em] font-medium">
-                  Desde 2023
+                  Acesso por curadoria
                 </span>
               </div>
             </div>
@@ -90,43 +97,30 @@ export default function About() {
         </div>
       </div>
 
-      {/* Full-width stats bar */}
+      {/* Full-width value pillars */}
       <div className="border-t border-b border-white/[0.04]">
         <div className="max-w-[1600px] mx-auto px-8 md:px-12" data-stagger>
           <div className="grid grid-cols-2 md:grid-cols-4">
             {[
-              { number: "3+", label: "Eventos VIP" },
-              { number: "4", label: "Imersões" },
-              { number: "100+", label: "Membros" },
-            ].map((stat, i) => (
+              { value: "Acesso", label: "Ambientes certos" },
+              { value: "Conexões", label: "Relações de valor" },
+              { value: "Influência", label: "Presença ampliada" },
+              { value: "Crescimento", label: "Novos caminhos" },
+            ].map((pillar, i) => (
               <div
-                key={stat.label}
-                className={`py-14 md:py-20 ${i < 2 ? "border-r border-white/[0.04]" : i === 2 ? "border-r border-white/[0.04] md:border-r" : ""} group`}
+                key={pillar.value}
+                className={`py-14 md:py-20 ${i < 3 ? "border-r border-white/[0.04]" : ""} group`}
               >
                 <div className="px-6 md:px-10">
-                  <span
-                    data-counter={stat.number.replace("+", "")}
-                    className="font-display font-bold text-5xl md:text-7xl text-accent/80 block mb-3 group-hover:translate-y-[-4px] transition-transform duration-700"
-                  >
-                    0{stat.number.includes("+") ? "+" : ""}
+                  <span className="font-display font-bold text-3xl md:text-5xl text-accent/80 block mb-3 uppercase group-hover:translate-y-[-4px] transition-transform duration-700">
+                    {pillar.value}
                   </span>
                   <span className="text-white/50 text-[11px] uppercase tracking-[0.3em]">
-                    {stat.label}
+                    {pillar.label}
                   </span>
                 </div>
               </div>
             ))}
-            {/* Infinity — no counter */}
-            <div className="py-14 md:py-20 group">
-              <div className="px-6 md:px-10">
-                <span data-reveal-scale className="font-display font-bold text-5xl md:text-7xl text-accent/80 block mb-3 group-hover:translate-y-[-4px] transition-transform duration-700">
-                  ∞
-                </span>
-                <span className="text-white/50 text-[11px] uppercase tracking-[0.3em]">
-                  Conexões
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       </div>

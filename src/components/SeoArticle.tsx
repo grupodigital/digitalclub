@@ -27,39 +27,38 @@ export default function SeoArticle() {
 
             <div className="space-y-6 text-white/50 text-[15px] leading-[2]">
               <p>
-                O <strong className="text-white/70">Digital Club</strong> é um ecossistema exclusivo
-                de experiências para <strong className="text-white/70">CEOs, Fundadores e Donos de
-                negócios no Amazonas, Brasil</strong>. Fundado em 2023, reúne mais de 100 membros
-                empresariais com acesso aos maiores eventos de negócios, imersões técnicas aplicadas,
-                networking estratégico e educação contínua de mercados.
+                O <strong className="text-white/70">Digital Club</strong> é uma comunidade exclusiva
+                para <strong className="text-white/70">CEOs, donos e fundadores</strong> que buscam
+                acesso, experiências premium e conexões estratégicas de alto valor na{" "}
+                <strong className="text-white/70">Região Norte do Brasil</strong>. Reúne empresários
+                que compartilham nível, visão e ambição em um ambiente pensado para gerar acesso,
+                fortalecer conexões e abrir novos caminhos de crescimento.
               </p>
 
               <p>
-                Os membros têm acesso VIP a três grandes eventos:{" "}
-                <strong className="text-white/70">DSX — Digital Summit Experience</strong> (Transformação
-                Digital), <strong className="text-white/70">Amazon IA</strong> (Inteligência Artificial
-                aplicada a negócios) e <strong className="text-white/70">Leaders AI Conference</strong>{" "}
-                (Liderança e Tecnologia). Além dos eventos, o clube oferece 4 imersões técnicas anuais
-                em Negócios, Gestão, Marketing e Vendas, jantar exclusivo com líderes do mercado e
-                acesso à plataforma <strong className="text-white/70">Digital Educa</strong> com
-                conteúdos e formação contínua para toda a equipe.
+                A experiência combina <strong className="text-white/70">relações estratégicas</strong>,{" "}
+                <strong className="text-white/70">experiências exclusivas</strong>, acesso ao
+                ecossistema do Grupo Digital, oportunidades de negócio e posicionamento. Cada encontro,
+                vivência e aproximação é desenhado para ampliar a presença do membro, fortalecer sua
+                influência e aproximá-lo das conversas que movem o mercado.
               </p>
 
               <p>
-                A adesão inclui 9 ingressos VIP, 12 ingressos para imersões, acesso antecipado a
-                pré-eventos e a possibilidade de levar +1 da empresa sem custo adicional. O Digital
-                Club está sediado no Amazonas e é o ecossistema de referência para líderes que
-                valorizam acesso exclusivo, networking estratégico e crescimento real dos seus negócios.
+                O Digital Club não é uma comunidade aberta: cada membro passa por um processo de{" "}
+                <strong className="text-white/70">curadoria</strong> que garante o nível de confiança,
+                relevância e troca que a experiência exige. O clube nasce oficialmente durante o{" "}
+                <strong className="text-white/70">DSX</strong>, a porta de entrada para a primeira turma
+                de membros, com vagas disponibilizadas exclusivamente para participantes do evento.
               </p>
             </div>
 
             {/* Key facts */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 pt-8 border-t border-white/[0.04]">
               {[
-                { label: "Fundado", value: "2023" },
-                { label: "Membros", value: "100+" },
-                { label: "Eventos VIP", value: "3" },
-                { label: "Imersões/ano", value: "4" },
+                { label: "Comunidade", value: "Exclusiva" },
+                { label: "Ingresso", value: "Curadoria" },
+                { label: "Região", value: "Norte" },
+                { label: "Porta de entrada", value: "DSX" },
               ].map((fact) => (
                 <div key={fact.label}>
                   <span className="text-accent font-display font-bold text-xl block">

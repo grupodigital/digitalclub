@@ -5,15 +5,16 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Benefits from "@/components/Benefits";
 import SocialProof from "@/components/SocialProof";
+import ComoEntrar from "@/components/ComoEntrar";
 import CTAFinal from "@/components/CTAFinal";
-import FAQ from "@/components/FAQ";
+import DSX from "@/components/DSX";
 import SeoArticle from "@/components/SeoArticle";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Digital Club | O Ecossistema de Experiências do Norte",
+  title: "Digital Club | Comunidade exclusiva para quem move o Norte do Brasil",
   description:
-    "O Digital Club é um ecossistema exclusivo para CEOs, Fundadores e Donos de negócios no Amazonas, Brasil. Eventos VIP (DSX, Amazon IA, Leaders AI Conference), 4 imersões técnicas, networking estratégico e plataforma Digital Educa. Mais de 100 membros desde 2023.",
+    "O Digital Club é uma comunidade exclusiva para CEOs, donos e fundadores que buscam acesso, experiências premium e conexões estratégicas de alto valor na Região Norte. Ingresso por curadoria. O clube nasce durante o DSX.",
   alternates: {
     canonical: "/",
   },
@@ -29,8 +30,9 @@ export default function Home() {
           <About />
           <Benefits />
           <SocialProof />
+          <ComoEntrar />
           <CTAFinal />
-          <FAQ />
+          <DSX />
           <SeoArticle />
         </main>
         <Footer />

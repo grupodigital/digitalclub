@@ -7,52 +7,38 @@ import { useRef, useEffect, useState } from "react";
 const benefits = [
   {
     num: "01",
-    title: "Eventos",
-    highlight: "9 VIPs",
-    copy: "3 VIPs para o DSX · 3 VIPs para o Amazon IA · 3 VIPs para o Leaders AI Conference. Acesso completo aos maiores eventos de negócios, inovação e tecnologia do Norte.",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070",
+    title: "Relações\nEstratégicas",
+    highlight: "Conexões de alto valor",
+    copy: "Conecte-se a empresários, fundadores e líderes que compartilham ambição, visão de crescimento e capacidade de gerar oportunidades relevantes.",
+    image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2070",
   },
   {
     num: "02",
-    title: "Imersões",
-    highlight: "4 imersões",
-    copy: "3 ingressos para quatro imersões técnicas em Negócios, Gestão, Marketing e Vendas.",
-    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070",
-  },
-  {
-    num: "03",
-    title: "Convidado",
-    highlight: "+1 grátis",
-    copy: "Leve mais um da sua empresa sem custo adicional. Multiplique o valor do seu investimento compartilhando a experiência com quem faz acontecer ao seu lado.",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2070",
-  },
-  {
-    num: "04",
-    title: "Jantar\nExclusivo",
-    highlight: "À mesa",
-    copy: "Enquanto a maioria assiste palestras de longe, você está à mesa com os maiores nomes do mercado. É nesse círculo que as conversas mais importantes acontecem, onde negócios são discutidos, parcerias são formadas e oportunidades são criadas.",
+    title: "Experiências\nExclusivas",
+    highlight: "Vivências selecionadas",
+    copy: "Participe de encontros, viagens, eventos e experiências cuidadosamente selecionadas para promover convivência, troca e acesso.",
     image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070",
   },
   {
+    num: "03",
+    title: "Acesso ao\nEcossistema",
+    highlight: "Grupo Digital",
+    copy: "Esteja próximo dos bastidores, eventos, iniciativas e conexões que fazem parte do maior ecossistema de negócios e inovação da Região Norte.",
+    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070",
+  },
+  {
+    num: "04",
+    title: "Oportunidades\nde Negócio",
+    highlight: "Apresentações estratégicas",
+    copy: "Amplie seu alcance por meio de apresentações estratégicas, conexões qualificadas e relacionamentos construídos com confiança.",
+    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2070",
+  },
+  {
     num: "05",
-    title: "Pré-eventos",
-    highlight: "Acesso antecipado",
-    copy: "Acesso aos pré-eventos de lançamento das nossas imersões e eventos inclusos. Você sabe sobre eventos antes de qualquer pessoa, escolhe os melhores horários e locais, traz convidados especiais e tem vantagem competitiva sobre quem não está no Digital Club.",
-    image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2070",
-  },
-  {
-    num: "06",
-    title: "Digital\nEduca",
-    highlight: "Plataforma",
-    copy: "Acesso à plataforma Digital Educa com conteúdos dos eventos e aulas exclusivas para todo o seu time. Revise aulas quantas vezes quiser, aprenda no seu ritmo, acesse conteúdo de especialistas, compartilhe com seu time e implemente o conhecimento imediatamente.",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2070",
-  },
-  {
-    num: "07",
-    title: "Networking",
-    highlight: "Comunidade",
-    copy: "Grupo de networking e negócios com todos os membros do Digital Club.",
-    image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070",
+    title: "Posicionamento",
+    highlight: "Comunidade de referência",
+    copy: "Faça parte de uma comunidade reconhecida por reunir empresários que lideram empresas relevantes e contribuem para o desenvolvimento da região.",
+    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069",
   },
 ];
 
@@ -108,15 +94,27 @@ export default function Benefits() {
             <div data-line-grow className="h-px bg-white/[0.06]" />
           </div>
           <span className="text-accent/80 text-[11px] uppercase tracking-[0.4em]">
-            Benefícios
+            O que você recebe
           </span>
         </div>
 
         <h2 data-reveal className="font-display font-bold text-fluid-xl text-white uppercase max-w-4xl">
-          Tudo que está
+          Um ambiente criado
           <br />
-          <span className="text-gradient">dentro</span> do clube.
+          para gerar <span className="text-gradient">valor.</span>
         </h2>
+
+        <div data-reveal-blur className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mt-12 max-w-5xl">
+          <p className="text-white/55 text-base leading-[2]">
+            O Digital Club foi desenhado para aproximar empresários em contextos
+            onde relações ganham profundidade, oportunidades surgem naturalmente e
+            novas perspectivas são construídas.
+          </p>
+          <p className="text-white/55 text-base leading-[2]">
+            A experiência combina relacionamento estratégico, acesso privilegiado e
+            vivências exclusivas que fortalecem o capital relacional de cada membro.
+          </p>
+        </div>
       </div>
 
       {/* Horizontal scroll area */}

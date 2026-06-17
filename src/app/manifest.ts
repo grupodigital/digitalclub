@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Digital Club - O Ecossistema de Experiências do Norte",
+    name: "Digital Club — Comunidade exclusiva para quem move o Norte do Brasil",
     short_name: "Digital Club",
     description:
-      "Club exclusivo para CEOs, Fundadores e Donos de negócios. Eventos, imersões, networking e educação contínua.",
+      "Comunidade exclusiva para CEOs, donos e fundadores. Acesso, experiências premium e conexões estratégicas de alto valor. Ingresso por curadoria.",
     start_url: "/",
     display: "standalone",
     background_color: "#080f13",

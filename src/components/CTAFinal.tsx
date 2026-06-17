@@ -52,23 +52,23 @@ export default function CTAFinal() {
             <div data-reveal-left>
               <div className="flex items-center gap-4 mb-10">
                 <span className="text-accent/80 text-[11px] uppercase tracking-[0.4em]">
-                  04 — Faça parte
+                  05 — Aplicação
                 </span>
               </div>
 
               <h2 className="font-display font-bold text-fluid-lg text-white uppercase leading-[1] mb-8 max-w-lg">
-                Digital Club: exclusivo para quem já entendeu que crescimento de verdade exige{" "}
-                <span className="text-gradient">acesso, contexto e conexões certas.</span>
+                Solicite sua aplicação e entre para uma comunidade construída por{" "}
+                <span className="text-gradient">acesso, relações e curadoria.</span>
               </h2>
 
               {/* Minimal checklist */}
               <div data-stagger className="space-y-3">
                 {[
-                  "9 ingressos VIP",
-                  "12 ingressos para imersões",
-                  "Jantar exclusivo",
-                  "Plataforma Digital Educa",
-                  "Networking com líderes",
+                  "Relações estratégicas",
+                  "Experiências exclusivas",
+                  "Acesso ao ecossistema do Grupo Digital",
+                  "Oportunidades de negócio",
+                  "Posicionamento",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
                     <div className="w-1 h-1 bg-accent rounded-full" />
@@ -95,12 +95,13 @@ export default function CTAFinal() {
             </div>
 
             <h3 className="font-display font-bold text-3xl md:text-4xl uppercase text-white mb-3">
-              Preencha seus
+              Envie sua
               <br />
-              <span className="text-accent">dados</span>
+              <span className="text-accent">aplicação</span>
             </h3>
             <p className="text-white/50 text-sm mb-12">
-              Preencha seus dados para avaliação. Retorno em até 48h.
+              Compartilhe sua trajetória e atuação empresarial. Sua aplicação passa
+              por curadoria e retornamos em até 48h.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-0" aria-label="Formulário de candidatura ao Digital Club">
@@ -129,13 +130,13 @@ export default function CTAFinal() {
                   type="submit"
                   className="btn-fill group w-full flex items-center justify-between px-10 py-6 border border-accent/40 text-accent hover:text-white text-[12px] uppercase tracking-[0.25em] font-medium transition-colors duration-500"
                 >
-                  <span>Quero ser Digital Club</span>
+                  <span>Solicitar aplicação</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-500" />
                 </button>
               </div>
 
               <p className="text-white/[0.3] text-[11px] text-center mt-8 tracking-wider">
-                Dados seguros · Avaliação sem compromisso
+                Dados seguros · Aplicação por curadoria
               </p>
             </form>
           </div>

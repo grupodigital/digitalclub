@@ -5,9 +5,10 @@ import Image from "next/image";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 
 const links = [
-  { label: "Sobre", href: "#about" },
-  { label: "Benefícios", href: "#benefits" },
-  { label: "Eventos", href: "#events" },
+  { label: "O valor", href: "#about" },
+  { label: "Comunidade", href: "#quem" },
+  { label: "Como entrar", href: "#como" },
+  { label: "DSX", href: "#dsx" },
 ];
 
 export default function Navbar() {
