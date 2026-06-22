@@ -83,7 +83,7 @@ export default function Benefits() {
   }, [scrollWidth]);
 
   return (
-    <section id="benefits" ref={sectionRef} className="relative bg-[#080f13]">
+    <section id="benefits" ref={sectionRef} className="relative bg-[#24322c]">
       {/* Section header */}
       <div className="max-w-[1600px] mx-auto px-8 md:px-12 pt-40 pb-20">
         <div data-reveal-left className="flex items-center gap-6 mb-16">
@@ -139,8 +139,8 @@ export default function Benefits() {
                     className="object-cover transition-transform duration-[2s]"
                     sizes="80vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#080f13] via-[#080f13]/60 to-transparent" />
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#080f13]/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#24322c] via-[#24322c]/60 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#24322c]/40 to-transparent" />
                 </div>
 
                 {/* Content overlay */}

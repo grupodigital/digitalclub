@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
   return (
     <main
-      className="min-h-screen flex items-center justify-center bg-[#080f13]"
+      className="min-h-screen flex items-center justify-center bg-[#24322c]"
     >
       <div className="w-full max-w-3xl px-6 py-12 text-center">
         {/* Header with icon */}

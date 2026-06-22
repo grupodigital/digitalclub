@@ -8,7 +8,7 @@ export default function DSX() {
   const ref = useScrollReveal();
 
   return (
-    <section id="dsx" ref={ref} className="relative bg-[#080f13] overflow-hidden">
+    <section id="dsx" ref={ref} className="relative bg-[#24322c] overflow-hidden">
       <div className="divider-glow" />
 
       {/* Background */}
@@ -22,7 +22,7 @@ export default function DSX() {
             sizes="100vw"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#080f13] via-[#080f13]/85 to-[#080f13]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#24322c] via-[#24322c]/85 to-[#24322c]" />
       </div>
 
       <div className="relative z-10 max-w-[1600px] mx-auto px-8 md:px-12 py-40">

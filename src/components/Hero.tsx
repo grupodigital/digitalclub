@@ -13,7 +13,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden bg-[#080f13]">
+    <section className="relative h-screen overflow-hidden bg-[#24322c]">
       {/* ── Full-bleed background image ── */}
       <div className="absolute inset-0">
         <Image
@@ -25,8 +25,8 @@ export default function Hero() {
           sizes="100vw"
           onLoad={() => setImgLoaded(true)}
         />
-        <div className="absolute inset-0 bg-[#080f13]/50" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#080f13] via-transparent to-[#080f13]/80" />
+        <div className="absolute inset-0 bg-[#24322c]/50" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#24322c] via-transparent to-[#24322c]/80" />
       </div>
 
       {/* ── Content ── */}

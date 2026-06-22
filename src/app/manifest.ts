@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "Comunidade exclusiva para CEOs, donos e fundadores. Acesso, experiências premium e conexões estratégicas de alto valor. Ingresso por curadoria.",
     start_url: "/",
     display: "standalone",
-    background_color: "#080f13",
-    theme_color: "#183d4c",
+    background_color: "#24322c",
+    theme_color: "#24322c",
     icons: [
       {
         src: "/favicon.svg",

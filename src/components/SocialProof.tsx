@@ -16,7 +16,7 @@ export default function SocialProof() {
   const ref = useScrollReveal();
 
   return (
-    <section id="quem" ref={ref} className="relative bg-[#080f13]">
+    <section id="quem" ref={ref} className="relative bg-[#000000]">
       {/* Marquee divider */}
       <div className="overflow-hidden border-t border-white/[0.04] py-6">
         <div className="animate-marquee-reverse whitespace-nowrap flex">
@@ -83,8 +83,8 @@ export default function SocialProof() {
               sizes="100vw"
             />
           </div>
-          <div className="absolute inset-0 bg-[#080f13]/55" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#080f13] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-[#000000]/55" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent" />
           <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10">
             <span className="text-white/55 text-[10px] uppercase tracking-[0.3em]">
               Comunidade por curadoria
@@ -107,7 +107,7 @@ export default function SocialProof() {
             {profiles.map((profile) => (
               <div
                 key={profile}
-                className="flex items-center gap-4 bg-[#080f13] px-8 py-8 group hover:bg-[#0a1218] transition-colors duration-500"
+                className="flex items-center gap-4 bg-[#000000] px-8 py-8 group hover:bg-[#0d0d0d] transition-colors duration-500"
               >
                 <div className="w-9 h-9 flex-shrink-0 border border-accent/30 flex items-center justify-center group-hover:border-accent/60 transition-colors duration-500">
                   <Check className="w-4 h-4 text-accent" />

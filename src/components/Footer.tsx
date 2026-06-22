@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#080f13] border-t border-white/[0.04]">
+    <footer className="bg-[#24322c] border-t border-white/[0.04]">
       {/* Big logo watermark */}
       <div className="max-w-[1600px] mx-auto px-8 md:px-12 py-20 md:py-28">
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-10">

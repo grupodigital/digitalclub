@@ -17,7 +17,7 @@ export default async function Image() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          background: "linear-gradient(135deg, #080f13 0%, #183d4c 50%, #0f2a35 100%)",
+          background: "linear-gradient(135deg, #24322c 0%, #24322c 50%, #1a241f 100%)",
           fontFamily: "sans-serif",
           position: "relative",
           overflow: "hidden",
@@ -32,7 +32,7 @@ export default async function Image() {
             width: "400px",
             height: "400px",
             borderRadius: "50%",
-            border: "1px solid rgba(179, 123, 75, 0.15)",
+            border: "1px solid rgba(241, 231, 219, 0.15)",
             display: "flex",
           }}
         />
@@ -44,7 +44,7 @@ export default async function Image() {
             width: "500px",
             height: "500px",
             borderRadius: "50%",
-            border: "1px solid rgba(179, 123, 75, 0.1)",
+            border: "1px solid rgba(241, 231, 219, 0.1)",
             display: "flex",
           }}
         />
@@ -57,7 +57,7 @@ export default async function Image() {
             left: "60px",
             right: "60px",
             height: "1px",
-            background: "linear-gradient(90deg, transparent, rgba(179, 123, 75, 0.4), transparent)",
+            background: "linear-gradient(90deg, transparent, rgba(241, 231, 219, 0.4), transparent)",
             display: "flex",
           }}
         />
@@ -75,13 +75,13 @@ export default async function Image() {
             style={{
               width: "40px",
               height: "1px",
-              background: "#b37b4b",
+              background: "#f1e7db",
               display: "flex",
             }}
           />
           <span
             style={{
-              color: "#b37b4b",
+              color: "#f1e7db",
               fontSize: "14px",
               letterSpacing: "0.5em",
               textTransform: "uppercase",
@@ -94,7 +94,7 @@ export default async function Image() {
             style={{
               width: "40px",
               height: "1px",
-              background: "#b37b4b",
+              background: "#f1e7db",
               display: "flex",
             }}
           />
@@ -128,7 +128,7 @@ export default async function Image() {
               textTransform: "uppercase",
               letterSpacing: "-0.02em",
               lineHeight: 1.1,
-              background: "linear-gradient(135deg, #b37b4b, #c99465, #b37b4b)",
+              background: "linear-gradient(135deg, #f1e7db, #f7f1ea, #f1e7db)",
               backgroundClip: "text",
               color: "transparent",
             }}
@@ -191,7 +191,7 @@ export default async function Image() {
                 gap: "4px",
               }}
             >
-              <span style={{ color: "#b37b4b", fontSize: "28px", fontWeight: 700 }}>
+              <span style={{ color: "#f1e7db", fontSize: "28px", fontWeight: 700 }}>
                 {s.val}
               </span>
               <span

@@ -25,7 +25,7 @@ export default function ComoEntrar() {
   const ref = useScrollReveal();
 
   return (
-    <section id="como" ref={ref} className="relative bg-[#080f13]">
+    <section id="como" ref={ref} className="relative bg-[#24322c]">
       <div className="section-divider" />
 
       <div className="max-w-[1600px] mx-auto px-8 md:px-12 py-40">
@@ -53,7 +53,7 @@ export default function ComoEntrar() {
           {steps.map((step) => (
             <div
               key={step.num}
-              className="bg-[#080f13] p-10 md:p-12 group hover:bg-[#0a1218] transition-colors duration-500"
+              className="bg-[#24322c] p-10 md:p-12 group hover:bg-[#1f2b25] transition-colors duration-500"
             >
               <div className="flex items-center gap-4 mb-10">
                 <span className="font-display font-bold text-5xl md:text-6xl text-accent/80 leading-none">

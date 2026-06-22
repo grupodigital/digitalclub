@@ -28,7 +28,7 @@ export default function CTAFinal() {
   };
 
   return (
-    <section id="cta" ref={ref} className="relative bg-[#080f13]">
+    <section id="cta" ref={ref} className="relative bg-[#000000]">
       {/* Divider glow */}
       <div className="divider-glow" />
 
@@ -44,8 +44,8 @@ export default function CTAFinal() {
               sizes="50vw"
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#080f13] via-[#080f13]/70 to-[#080f13]/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#080f13] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#000000] via-[#000000]/70 to-[#000000]/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent" />
 
           {/* Content over image */}
           <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-16 lg:p-20">
@@ -81,7 +81,7 @@ export default function CTAFinal() {
         </div>
 
         {/* Right — Form */}
-        <div className="flex items-center justify-center p-8 md:p-16 lg:p-20 bg-[#0a1218]">
+        <div className="flex items-center justify-center p-8 md:p-16 lg:p-20 bg-[#0d0d0d]">
           <div data-reveal-right className="w-full max-w-md">
             {/* Logo watermark */}
             <div data-reveal-blur className="mb-16">

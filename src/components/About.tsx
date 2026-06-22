@@ -7,7 +7,7 @@ export default function About() {
   const ref = useScrollReveal();
 
   return (
-    <section id="about" ref={ref} className="relative bg-[#080f13]">
+    <section id="about" ref={ref} className="relative bg-[#000000]">
       {/* Top divider */}
       <div className="section-divider" />
 

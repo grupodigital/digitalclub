@@ -6,7 +6,7 @@ export default function SeoArticle() {
   const ref = useScrollReveal();
 
   return (
-    <section ref={ref} className="relative bg-[#080f13] border-t border-white/[0.04]">
+    <section ref={ref} className="relative bg-[#000000] border-t border-white/[0.04]">
       <div className="max-w-[1600px] mx-auto px-8 md:px-12 py-28">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
           {/* Left label */}

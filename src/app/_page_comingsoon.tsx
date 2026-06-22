@@ -15,7 +15,7 @@ export default function ComingSoon() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 60% 50% at 50% 40%, rgba(179,123,75,0.08) 0%, transparent 70%)",
+            "radial-gradient(ellipse 60% 50% at 50% 40%, rgba(241, 231, 219,0.08) 0%, transparent 70%)",
         }}
       />
 

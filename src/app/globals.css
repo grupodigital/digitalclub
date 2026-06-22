@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #183d4c;
-  --color-primary-light: #1e4d5f;
-  --color-primary-dark: #0f2a35;
-  --color-accent: #b37b4b;
-  --color-accent-light: #c99465;
-  --color-accent-dark: #9a6639;
-  --color-cream: #f5f0eb;
+  --color-primary: #24322c;
+  --color-primary-light: #2f4138;
+  --color-primary-dark: #1a241f;
+  --color-accent: #f1e7db;
+  --color-accent-light: #f7f1ea;
+  --color-accent-dark: #dadada;
+  --color-cream: #f1e7db;
   --color-background: #ffffff;
-  --color-foreground: #183d4c;
+  --color-foreground: #24322c;
   --font-sans: var(--font-inter);
   --font-display: var(--font-oswald);
 }
@@ -37,14 +37,14 @@ html {
 }
 
 body {
-  background: #080f13;
+  background: #24322c;
   color: #fff;
   font-family: var(--font-sans), system-ui, sans-serif;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: rgba(179, 123, 75, 0.4);
+  background: rgba(241, 231, 219, 0.4);
   color: #fff;
 }
 
@@ -80,7 +80,7 @@ body {
 /* ════════════════ GRADIENT TEXT ════════════════ */
 
 .text-gradient {
-  background: linear-gradient(135deg, #b37b4b 0%, #d4a574 50%, #b37b4b 100%);
+  background: linear-gradient(135deg, #f1e7db 0%, #ffffff 50%, #f1e7db 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -212,7 +212,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: #b37b4b;
+  background: #f1e7db;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
@@ -237,7 +237,7 @@ body {
   left: 0;
   width: 0;
   height: 1px;
-  background: #b37b4b;
+  background: #f1e7db;
   transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -268,13 +268,13 @@ body {
 
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(179,123,75,0.3); border-radius: 2px; }
+::-webkit-scrollbar-thumb { background: rgba(241, 231, 219,0.3); border-radius: 2px; }
 
 /* ════════════════ DIVIDER ════════════════ */
 
 .divider-glow {
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(179,123,75,0.4) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(241, 231, 219,0.4) 50%, transparent 100%);
 }
 
 /* ════════════════ SCROLL-DRIVEN PARALLAX ════════════════ */
