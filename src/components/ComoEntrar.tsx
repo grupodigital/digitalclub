@@ -75,7 +75,7 @@ export default function ComoEntrar() {
         <div data-reveal className="flex justify-center">
           <a
             href="#cta"
-            className="btn-fill group inline-flex items-center gap-5 px-12 py-6 border border-accent/40 text-accent hover:text-white text-[12px] uppercase tracking-[0.3em] font-medium transition-colors duration-500"
+            className="btn-fill group inline-flex items-center gap-5 px-12 py-6 border border-accent/40 text-accent hover:text-black text-[12px] uppercase tracking-[0.3em] font-medium transition-colors duration-500"
           >
             Aplicar para o Digital Club
             <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-500" />

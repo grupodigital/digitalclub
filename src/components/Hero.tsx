@@ -85,7 +85,7 @@ export default function Hero() {
             {/* Right — CTA */}
             <a
               href="#cta"
-              className="btn-fill inline-flex items-center gap-4 px-10 py-5 border border-accent/40 text-accent hover:text-white text-[11px] uppercase tracking-[0.3em] font-medium transition-colors duration-500 w-fit group whitespace-nowrap"
+              className="btn-fill inline-flex items-center gap-4 px-10 py-5 border border-accent/40 text-accent hover:text-black text-[11px] uppercase tracking-[0.3em] font-medium transition-colors duration-500 w-fit group whitespace-nowrap"
             >
               Solicite sua aplicação
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

@@ -128,7 +128,7 @@ export default function CTAFinal() {
               <div className="pt-12">
                 <button
                   type="submit"
-                  className="btn-fill group w-full flex items-center justify-between px-10 py-6 border border-accent/40 text-accent hover:text-white text-[12px] uppercase tracking-[0.25em] font-medium transition-colors duration-500"
+                  className="cursor-pointer btn-fill group w-full flex items-center justify-between px-10 py-6 border border-accent/40 text-accent hover:text-black text-[12px] uppercase tracking-[0.25em] font-medium transition-colors duration-500"
                 >
                   <span>Solicitar aplicação</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-500" />
