@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
 @theme inline {
   --color-primary: #24322c;
@@ -12,6 +13,7 @@
   --color-foreground: #24322c;
   --font-sans: var(--font-inter);
   --font-display: var(--font-oswald);
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
 }
 
 /* ════════════════ BASE ════════════════ */
@@ -52,6 +54,10 @@ body {
 
 .font-display {
   font-family: var(--font-display), system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
 }
 
 .text-fluid-hero {
@@ -222,6 +228,12 @@ body {
 .btn-fill:hover::before {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+/* Texto escuro no hover para contraste sobre o preenchimento creme */
+.btn-fill:hover,
+.btn-fill:hover * {
+  color: #24322c;
 }
 
 /* ════════════════ LINK UNDERLINE ════════════════ */

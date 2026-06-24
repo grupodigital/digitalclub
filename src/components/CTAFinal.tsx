@@ -50,31 +50,23 @@ export default function CTAFinal() {
           {/* Content over image */}
           <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-16 lg:p-20">
             <div data-reveal-left>
-              <div className="flex items-center gap-4 mb-10">
-                <span className="text-accent/80 text-[11px] uppercase tracking-[0.4em]">
-                  05 — Aplicação
-                </span>
-              </div>
-
-              <h2 className="font-display font-bold text-fluid-lg text-white uppercase leading-[1] mb-8 max-w-lg">
-                Solicite sua aplicação e entre para uma comunidade construída por{" "}
-                <span className="text-gradient">acesso, relações e curadoria.</span>
+              <h2 className="font-serif font-extralight text-fluid-lg text-white tracking-tight leading-[1] mb-8 max-w-lg">
+                Faça parte do ambiente certo para quem move o{" "}
+                <span className="text-gradient">Norte do Brasil</span>
               </h2>
 
-              {/* Minimal checklist */}
-              <div data-stagger className="space-y-3">
-                {[
-                  "Relações estratégicas",
-                  "Experiências exclusivas",
-                  "Acesso ao ecossistema do Grupo Digital",
-                  "Oportunidades de negócio",
-                  "Posicionamento",
-                ].map((item) => (
-                  <div key={item} className="flex items-center gap-3">
-                    <div className="w-1 h-1 bg-accent rounded-full" />
-                    <span className="text-white/55 text-[13px]">{item}</span>
-                  </div>
-                ))}
+              {/* Supporting copy */}
+              <div className="space-y-5 max-w-md">
+                <p className="text-white/55 text-[15px] leading-[1.9]">
+                  O Digital Club é para empresários que entendem que crescimento
+                  também depende de acesso, relacionamento e presença nos ambientes
+                  certos.
+                </p>
+                <p className="text-white/55 text-[15px] leading-[1.9]">
+                  Se você é CEO, dono ou fundador e deseja fazer parte de uma
+                  comunidade empresarial exclusiva, envie sua aplicação para
+                  avaliação.
+                </p>
               </div>
             </div>
           </div>
@@ -93,16 +85,6 @@ export default function CTAFinal() {
                 className="w-[100px] h-auto opacity-20"
               />
             </div>
-
-            <h3 className="font-display font-bold text-3xl md:text-4xl uppercase text-white mb-3">
-              Envie sua
-              <br />
-              <span className="text-accent">aplicação</span>
-            </h3>
-            <p className="text-white/50 text-sm mb-12">
-              Compartilhe sua trajetória e atuação empresarial. Sua aplicação passa
-              por curadoria e retornamos em até 48h.
-            </p>
 
             <form onSubmit={handleSubmit} className="space-y-0" aria-label="Formulário de candidatura ao Digital Club">
               {[
@@ -130,14 +112,10 @@ export default function CTAFinal() {
                   type="submit"
                   className="cursor-pointer btn-fill group w-full flex items-center justify-between px-10 py-6 border border-accent/40 text-accent hover:text-black text-[12px] uppercase tracking-[0.25em] font-medium transition-colors duration-500"
                 >
-                  <span>Solicitar aplicação</span>
+                  <span>Solicite sua aplicação</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-500" />
                 </button>
               </div>
-
-              <p className="text-white/[0.3] text-[11px] text-center mt-8 tracking-wider">
-                Dados seguros · Aplicação por curadoria
-              </p>
             </form>
           </div>
         </div>

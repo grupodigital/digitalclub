@@ -4,11 +4,11 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Benefits from "@/components/Benefits";
+import ExperienciaMembro from "@/components/ExperienciaMembro";
 import SocialProof from "@/components/SocialProof";
 import ComoEntrar from "@/components/ComoEntrar";
-import CTAFinal from "@/components/CTAFinal";
 import DSX from "@/components/DSX";
-import SeoArticle from "@/components/SeoArticle";
+import CTAFinal from "@/components/CTAFinal";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -29,11 +29,11 @@ export default function Home() {
           <Hero />
           <About />
           <Benefits />
+          <ExperienciaMembro />
           <SocialProof />
           <ComoEntrar />
-          <CTAFinal />
           <DSX />
-          <SeoArticle />
+          <CTAFinal />
         </main>
         <Footer />
       </div>

@@ -86,22 +86,10 @@ export default function Benefits() {
     <section id="benefits" ref={sectionRef} className="relative bg-[#24322c]">
       {/* Section header */}
       <div className="max-w-[1600px] mx-auto px-8 md:px-12 pt-40 pb-20">
-        <div data-reveal-left className="flex items-center gap-6 mb-16">
-          <span className="font-display font-bold text-[80px] md:text-[120px] leading-none text-white/[0.06]">
-            02
-          </span>
-          <div className="flex-1">
-            <div data-line-grow className="h-px bg-white/[0.06]" />
-          </div>
-          <span className="text-accent/80 text-[11px] uppercase tracking-[0.4em]">
-            O que você recebe
-          </span>
-        </div>
-
-        <h2 data-reveal className="font-display font-bold text-fluid-xl text-white uppercase max-w-4xl">
+        <h2 data-reveal className="font-serif font-extralight text-fluid-xl text-white tracking-tight max-w-4xl">
           Um ambiente criado
           <br />
-          para gerar <span className="text-gradient">valor.</span>
+          para gerar <span className="text-gradient">valor</span>
         </h2>
 
         <div data-reveal-blur className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mt-12 max-w-5xl">
@@ -150,12 +138,9 @@ export default function Benefits() {
                       {b.num}
                     </span>
                     <div className="w-8 h-px bg-accent/40" />
-                    <span className="text-accent/60 text-[11px] uppercase tracking-[0.3em]">
-                      {b.highlight}
-                    </span>
                   </div>
 
-                  <h3 className="font-display font-bold text-4xl md:text-6xl lg:text-7xl text-white uppercase whitespace-pre-line leading-[0.95] mb-6">
+                  <h3 className="font-serif font-extralight text-4xl md:text-6xl lg:text-7xl text-white whitespace-pre-line tracking-tight leading-[0.95] mb-6">
                     {b.title}
                   </h3>
 

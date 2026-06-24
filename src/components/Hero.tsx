@@ -20,7 +20,7 @@ export default function Hero() {
           src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070"
           alt="Evento de negócios e networking empresarial"
           fill
-          className={`object-cover transition-all duration-[3s] ease-out ${imgLoaded ? "opacity-40 scale-100" : "opacity-0 scale-105"}`}
+          className={`object-cover transition-all duration-[3s] ease-out ${imgLoaded ? "opacity-20 scale-100" : "opacity-0 scale-105"}`}
           priority
           sizes="100vw"
           onLoad={() => setImgLoaded(true)}
@@ -31,17 +31,8 @@ export default function Hero() {
 
       {/* ── Content ── */}
       <div className="relative z-10 h-full flex flex-col justify-between max-w-[1600px] mx-auto px-8 md:px-12 w-full">
-        {/* Top — spacer + eyebrow */}
-        <div className="pt-32">
-          <div
-            className={`flex items-center gap-5 transition-all duration-1000 delay-[0.6s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-          >
-            <div className="w-10 h-px bg-accent" />
-            <span className="text-accent text-[11px] uppercase tracking-[0.5em] font-medium">
-              Digital Club
-            </span>
-          </div>
-        </div>
+        {/* Top — spacer */}
+        <div className="pt-32" />
 
         {/* Center — headline */}
         <div className="flex-1 flex items-center -mt-10">
@@ -51,18 +42,18 @@ export default function Hero() {
           <div aria-hidden="true">
             {/* Each line animates separately */}
             <div className="overflow-hidden z-[1] relative">
-              <p className={`font-display font-bold text-[9vw] md:text-[8vw] lg:text-[7vw] text-white uppercase leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.3s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
+              <p className={`font-serif font-extralight text-[9vw] md:text-[8vw] lg:text-[7vw] text-white leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.3s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
                 O ambiente certo
               </p>
             </div>
             <div className="overflow-hidden z-[2] relative">
-              <p className={`font-display font-bold text-[9vw] md:text-[8vw] lg:text-[7vw] uppercase leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.5s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
+              <p className={`font-serif font-extralight text-[9vw] md:text-[8vw] lg:text-[7vw] leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.5s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
                 <span className="text-gradient">para quem move</span>
               </p>
             </div>
             <div className="overflow-hidden z-[1] relative">
-              <p className={`font-display font-bold text-[9vw] md:text-[8vw] lg:text-[7vw] text-white uppercase leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.7s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
-                o Norte do Brasil<span className="text-accent">.</span>
+              <p className={`font-serif font-extralight text-[9vw] md:text-[8vw] lg:text-[7vw] text-white leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.7s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
+                <span className="text-accent">o Norte do Brasil</span>
               </p>
             </div>
           </div>

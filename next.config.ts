@@ -24,7 +24,12 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: resolve(__dirname),
   },
-  allowedDevOrigins: ["10.10.11.54"],
+  allowedDevOrigins: [
+    "10.10.11.54",
+    "*.ngrok-free.app",
+    "*.ngrok.app",
+    "*.ngrok.io",
+  ],
   images: {
     remotePatterns: [
       {

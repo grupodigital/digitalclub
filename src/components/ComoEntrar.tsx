@@ -7,12 +7,12 @@ const steps = [
   {
     num: "01",
     title: "Envie sua aplicação",
-    copy: "Preencha o formulário compartilhando informações sobre sua trajetória e atuação empresarial.",
+    copy: "Preencha o formulário compartilhando informações sobre sua trajetória, atuação empresarial e interesse em fazer parte do Digital Club.",
   },
   {
     num: "02",
     title: "Avaliação do perfil",
-    copy: "Nossa equipe realiza uma análise para entender a aderência do candidato ao momento e aos objetivos da comunidade.",
+    copy: "Nossa equipe realiza uma análise para entender a aderência do candidato ao momento da comunidade, ao perfil dos membros e aos objetivos do clube.",
   },
   {
     num: "03",
@@ -29,24 +29,25 @@ export default function ComoEntrar() {
       <div className="section-divider" />
 
       <div className="max-w-[1600px] mx-auto px-8 md:px-12 py-40">
-        {/* Header */}
-        <div data-reveal-left className="flex items-center gap-6 mb-16">
-          <span className="font-display font-bold text-[80px] md:text-[120px] leading-none text-white/[0.06]">
-            04
-          </span>
-          <div className="flex-1">
-            <div data-line-grow className="h-px bg-white/[0.06]" />
-          </div>
-          <span className="text-accent/80 text-[11px] uppercase tracking-[0.4em]">
-            Como entrar
-          </span>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mb-24 items-end">
+          <h2 data-reveal className="font-serif font-extralight text-fluid-xl text-white tracking-tight max-w-4xl">
+            A entrada acontece
+            <br />
+            por aplicação e <span className="text-gradient">curadoria</span>
+          </h2>
 
-        <h2 data-reveal className="font-display font-bold text-fluid-xl text-white uppercase max-w-4xl mb-24">
-          Um processo
-          <br />
-          feito por <span className="text-gradient">curadoria.</span>
-        </h2>
+          <div data-reveal-blur className="space-y-6 max-w-lg">
+            <p className="text-white/55 text-base leading-[2]">
+              O Digital Club foi criado para preservar a qualidade das relações
+              entre seus membros.
+            </p>
+            <p className="text-white/55 text-base leading-[2]">
+              Por isso, o processo de entrada não funciona como uma compra comum.
+              Cada aplicação passa por análise para entender a aderência do
+              candidato ao momento, aos objetivos e ao nível da comunidade.
+            </p>
+          </div>
+        </div>
 
         {/* Steps */}
         <div data-stagger className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/[0.04] border border-white/[0.04] mb-20">
@@ -61,7 +62,7 @@ export default function ComoEntrar() {
                 </span>
                 <div className="flex-1 h-px bg-white/[0.06] group-hover:bg-accent/20 transition-colors duration-500" />
               </div>
-              <h3 className="font-display font-bold text-xl md:text-2xl text-white uppercase leading-tight mb-5">
+              <h3 className="font-serif font-extralight text-xl md:text-2xl text-white tracking-tight leading-tight mb-5">
                 {step.title}
               </h3>
               <p className="text-white/50 text-sm md:text-[15px] leading-[1.9]">

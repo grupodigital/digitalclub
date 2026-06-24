@@ -6,6 +6,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 
 const links = [
   { label: "O valor", href: "#about" },
+  { label: "A experiência", href: "#experiencia" },
   { label: "Comunidade", href: "#quem" },
   { label: "Como entrar", href: "#como" },
   { label: "DSX", href: "#dsx" },
@@ -33,7 +34,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#" className="relative z-10">
             <Image
-              src="/logo.svg"
+              src="/LOGO-DIGITAL-CLUB-PNG.png"
               alt="Digital Club"
               width={120}
               height={40}
@@ -43,7 +44,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-12">
+          <div className="hidden lg:flex items-center gap-12">
             {links.map((link) => (
               <a
                 key={link.label}
@@ -67,7 +68,7 @@ export default function Navbar() {
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={menuOpen}
-            className="md:hidden relative z-10 text-white mix-blend-difference"
+            className="lg:hidden relative z-10 text-white mix-blend-difference"
           >
             {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -90,7 +91,7 @@ export default function Navbar() {
               key={link.label}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="font-display font-bold text-5xl uppercase text-white hover:text-accent transition-colors duration-300"
+              className="font-serif font-extralight text-5xl text-white hover:text-accent transition-colors duration-300"
             >
               {link.label}
             </a>

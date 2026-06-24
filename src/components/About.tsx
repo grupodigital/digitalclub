@@ -14,31 +14,18 @@ export default function About() {
       {/* Sticky text + scroll images */}
       <div className="min-h-screen flex flex-col justify-center py-40">
         <div className="max-w-[1600px] mx-auto px-8 md:px-12 w-full">
-          {/* Section number */}
-          <div data-reveal-left className="flex items-center gap-6 mb-20">
-            <span className="font-display font-bold text-[80px] md:text-[120px] leading-none text-white/[0.06]">
-              01
-            </span>
-            <div className="flex-1">
-              <div data-line-grow className="h-px bg-white/[0.06]" />
-            </div>
-            <span className="text-accent/80 text-[11px] uppercase tracking-[0.4em]">
-              O valor
-            </span>
-          </div>
-
           {/* Split layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
             {/* Left — Headline */}
             <div>
-              <h2 data-reveal className="font-display font-bold text-fluid-xl text-white uppercase leading-[0.95]">
+              <h2 data-reveal className="font-serif font-extralight text-fluid-xl text-white tracking-tight leading-[0.95]">
                 Relações certas
                 <br />
                 geram
                 <br />
                 <span className="text-gradient">oportunidades</span>
                 <br />
-                maiores.
+                maiores
               </h2>
 
               <div data-reveal-blur className="space-y-6 mt-12 max-w-md">
@@ -86,41 +73,7 @@ export default function About() {
                 className="absolute -top-8 -right-8 w-24 h-24 border border-accent/10 rounded-full pointer-events-none"
               />
 
-              {/* Floating accent label */}
-              <div data-reveal-left className="absolute -bottom-6 left-4 bg-accent px-6 py-3">
-                <span className="text-white text-[11px] uppercase tracking-[0.3em] font-medium">
-                  Acesso por curadoria
-                </span>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Full-width value pillars */}
-      <div className="border-t border-b border-white/[0.04]">
-        <div className="max-w-[1600px] mx-auto px-8 md:px-12" data-stagger>
-          <div className="grid grid-cols-2 md:grid-cols-4">
-            {[
-              { value: "Acesso", label: "Ambientes certos" },
-              { value: "Conexões", label: "Relações de valor" },
-              { value: "Influência", label: "Presença ampliada" },
-              { value: "Crescimento", label: "Novos caminhos" },
-            ].map((pillar, i) => (
-              <div
-                key={pillar.value}
-                className={`py-14 md:py-20 ${i < 3 ? "border-r border-white/[0.04]" : ""} group`}
-              >
-                <div className="px-6 md:px-10">
-                  <span className="font-display font-bold text-3xl md:text-5xl text-accent/80 block mb-3 uppercase group-hover:translate-y-[-4px] transition-transform duration-700">
-                    {pillar.value}
-                  </span>
-                  <span className="text-white/50 text-[11px] uppercase tracking-[0.3em]">
-                    {pillar.label}
-                  </span>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>

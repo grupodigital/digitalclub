@@ -26,28 +26,14 @@ export default function DSX() {
       </div>
 
       <div className="relative z-10 max-w-[1600px] mx-auto px-8 md:px-12 py-40">
-        {/* Header */}
-        <div data-reveal-left className="flex items-center gap-6 mb-20">
-          <span className="font-display font-bold text-[80px] md:text-[120px] leading-none text-white/[0.06]">
-            06
-          </span>
-          <div className="flex-1">
-            <div data-line-grow className="h-px bg-white/[0.06]" />
-          </div>
-          <span className="text-accent/80 text-[11px] uppercase tracking-[0.4em] text-right">
-            DSX — A porta de entrada
-          </span>
-        </div>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-end">
           {/* Left — Headline */}
-          <h2 data-reveal className="font-display font-bold text-fluid-xl text-white uppercase leading-[0.95]">
+          <h2 data-reveal className="font-serif font-extralight text-fluid-xl text-white tracking-tight leading-[0.95]">
             O Digital Club
             <br />
-            nasce durante o
+            nasce oficialmente
             <br />
-            <span className="text-gradient">DSX</span>
-            <span className="text-accent">.</span>
+            durante o <span className="text-gradient">DSX</span>
           </h2>
 
           {/* Right — Body */}
@@ -69,7 +55,7 @@ export default function DSX() {
           <div data-reveal-left className="flex items-start gap-5">
             <div className="w-10 h-px bg-accent mt-4 flex-shrink-0" />
             <p className="text-white/80 text-lg md:text-xl leading-[1.6] font-light max-w-md">
-              As primeiras vagas serão disponibilizadas{" "}
+              As primeiras aplicações serão abertas{" "}
               <span className="text-accent">exclusivamente para participantes do DSX.</span>
             </p>
           </div>
