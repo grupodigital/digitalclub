@@ -20,13 +20,13 @@ export default function Hero() {
           src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070"
           alt="Evento de negócios e networking empresarial"
           fill
-          className={`object-cover transition-all duration-[3s] ease-out ${imgLoaded ? "opacity-20 scale-100" : "opacity-0 scale-105"}`}
+          className={`object-cover transition-all duration-[3s] ease-out ${imgLoaded ? "opacity-40 scale-100" : "opacity-0 scale-105"}`}
           priority
           sizes="100vw"
           onLoad={() => setImgLoaded(true)}
         />
-        <div className="absolute inset-0 bg-[#24322c]/50" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#24322c] via-transparent to-[#24322c]/80" />
+        <div className="absolute inset-0 bg-[#24322c]/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#24322c]/80 via-transparent to-[#24322c]/60" />
       </div>
 
       {/* ── Content ── */}
