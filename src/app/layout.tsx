@@ -132,7 +132,7 @@ export default function RootLayout({
     url: SITE_URL,
     logo: {
       "@type": "ImageObject",
-      url: `${SITE_URL}/logo.svg`,
+      url: `${SITE_URL}/LOGO-DIGITAL-CLUB-PNG.png`,
       width: 200,
       height: 70,
     },

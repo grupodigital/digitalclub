@@ -9,11 +9,11 @@ export default function Footer() {
       <div className="max-w-[1600px] mx-auto px-8 md:px-12 py-20 md:py-28">
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-10">
           <Image
-            src="/logo.svg"
+            src="/LOGO-DIGITAL-CLUB-PNG.png"
             alt="Digital Club"
             width={200}
             height={70}
-            className="w-[160px] md:w-[200px] h-auto opacity-[0.2]"
+            className="w-[160px] md:w-[200px] h-auto opacity-[0.2] brightness-0 invert"
           />
           <a
             href="#"

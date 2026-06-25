@@ -78,11 +78,11 @@ export default function CTAFinal() {
             {/* Logo watermark */}
             <div data-reveal-blur className="mb-16">
               <Image
-                src="/logo.svg"
+                src="/LOGO-DIGITAL-CLUB-PNG.png"
                 alt="Digital Club"
                 width={140}
                 height={50}
-                className="w-[100px] h-auto opacity-20"
+                className="w-[100px] h-auto opacity-20 brightness-0 invert"
               />
             </div>
 

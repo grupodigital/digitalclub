@@ -27,12 +27,12 @@ export default function ComingSoon() {
         {/* Logo */}
         <div className="animate-hero-up animate-hero-up-d1 mb-12">
           <Image
-            src="/logo.svg"
+            src="/LOGO-DIGITAL-CLUB-PNG.png"
             alt="Digital Club"
             width={180}
             height={60}
             priority
-            className="opacity-90"
+            className="opacity-90 brightness-0 invert"
           />
         </div>
 
