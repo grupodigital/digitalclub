@@ -58,10 +58,10 @@ export const metadata: Metadata = {
   classification: "Business Networking",
   icons: {
     icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-digitalclub.png", type: "image/png" },
       { url: "/favicon.ico", sizes: "any" },
     ],
-    apple: "/favicon.svg",
+    apple: "/favicon-digitalclub.png",
   },
   openGraph: {
     type: "website",

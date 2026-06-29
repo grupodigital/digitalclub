@@ -12,9 +12,9 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#24322c",
     icons: [
       {
-        src: "/favicon.svg",
+        src: "/favicon-digitalclub.png",
         sizes: "any",
-        type: "image/svg+xml",
+        type: "image/png",
       },
       {
         src: "/favicon.ico",
