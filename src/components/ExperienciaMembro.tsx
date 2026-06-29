@@ -69,17 +69,17 @@ export default function ExperienciaMembro() {
 
           <div className="flex items-end">
             <div data-reveal-blur className="space-y-6 max-w-lg">
-              <p className="text-white/55 text-base leading-[2]">
+              <p className="text-[#EDE8D9] text-base leading-[2]">
                 O Digital Club combina relacionamento estratégico, encontros
                 presenciais, experiências exclusivas e acesso ao ecossistema do
                 Grupo Digital.
               </p>
-              <p className="text-white/55 text-base leading-[2]">
+              <p className="text-[#EDE8D9] text-base leading-[2]">
                 Cada entrega foi pensada para aproximar o membro de ambientes,
                 pessoas e oportunidades que ampliam seu capital relacional e
                 fortalecem sua presença no mercado.
               </p>
-              <p className="text-white/55 text-base leading-[2]">
+              <p className="text-[#EDE8D9] text-base leading-[2]">
                 Mais do que benefícios isolados, a experiência cria uma jornada
                 contínua de acesso, convivência e relacionamento de alto valor.
               </p>
@@ -105,7 +105,7 @@ export default function ExperienciaMembro() {
                 </h3>
               </div>
               <div className="md:col-span-6">
-                <p className="text-white/50 text-sm md:text-[15px] leading-[1.9] max-w-xl">
+                <p className="text-[#EDE8D9] text-sm md:text-[15px] leading-[1.9] max-w-xl">
                   {item.copy}
                 </p>
               </div>
@@ -116,18 +116,18 @@ export default function ExperienciaMembro() {
         {/* Closing note */}
         <div data-reveal-blur className="mt-20 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-20">
           <div className="lg:col-span-7 space-y-6">
-            <p className="text-white/60 text-base md:text-lg leading-[1.8]">
+            <p className="text-[#EDE8D9] text-base md:text-lg leading-[1.8]">
               O Digital Club foi desenhado para entregar presença contínua no
               ecossistema, relacionamento qualificado e acesso a experiências que
               ampliam o valor de cada membro.
             </p>
-            <p className="text-white/55 text-base leading-[2]">
+            <p className="text-[#EDE8D9] text-base leading-[2]">
               Tudo existe para fortalecer o mesmo objetivo: aproximar empresários
               das pessoas, conversas e oportunidades certas.
             </p>
           </div>
           <div className="lg:col-span-5 flex items-start">
-            <p className="text-white/35 text-[13px] leading-[1.9] border-l border-accent/20 pl-6">
+            <p className="text-[#EDE8D9] text-[13px] leading-[1.9] border-l border-accent/20 pl-6">
               Os acessos, encontros e experiências seguem o calendário oficial do
               Grupo Digital e podem estar sujeitos à confirmação de datas,
               disponibilidade e regras específicas de cada evento.

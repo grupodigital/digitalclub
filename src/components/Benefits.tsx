@@ -10,21 +10,21 @@ const benefits = [
     title: "Relações\nEstratégicas",
     highlight: "Conexões de alto valor",
     copy: "Conecte-se a empresários, fundadores e líderes que compartilham ambição, visão de crescimento e capacidade de gerar oportunidades relevantes.",
-    image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2070",
+    image: "/RELACOES-ESTRATEGICAS.png",
   },
   {
     num: "02",
     title: "Experiências\nExclusivas",
     highlight: "Vivências selecionadas",
     copy: "Participe de encontros, viagens, eventos e experiências cuidadosamente selecionadas para promover convivência, troca e acesso.",
-    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070",
+    image: "/experiencia_digital_club.png",
   },
   {
     num: "03",
     title: "Acesso ao\nEcossistema",
     highlight: "Grupo Digital",
     copy: "Esteja próximo dos bastidores, eventos, iniciativas e conexões que fazem parte do maior ecossistema de negócios e inovação da Região Norte.",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070",
+    image: "/ECOSSISTEMA.png",
   },
   {
     num: "04",
@@ -38,7 +38,7 @@ const benefits = [
     title: "Posicionamento",
     highlight: "Comunidade de referência",
     copy: "Faça parte de uma comunidade reconhecida por reunir empresários que lideram empresas relevantes e contribuem para o desenvolvimento da região.",
-    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069",
+    image: "/POSICIONAMENTO.png",
   },
 ];
 
@@ -86,19 +86,17 @@ export default function Benefits() {
     <section id="benefits" ref={sectionRef} className="relative bg-[#24322c]">
       {/* Section header */}
       <div className="max-w-[1600px] mx-auto px-8 md:px-12 pt-40 pb-20">
-        <h2 data-reveal className="font-serif font-extralight text-fluid-xl text-white tracking-tight max-w-4xl">
-          Um ambiente criado
-          <br />
-          para gerar <span className="text-gradient">valor</span>
+        <h2 data-reveal className="font-serif font-extralight text-[clamp(0.7rem,4.5vw,5rem)] whitespace-nowrap text-white tracking-tight">
+          Um ambiente criado para gerar <span className="text-gradient">valor</span>
         </h2>
 
         <div data-reveal-blur className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mt-12 max-w-5xl">
-          <p className="text-white/55 text-base leading-[2]">
+          <p className="text-[#EDE8D9] text-base leading-[2]">
             O Digital Club foi desenhado para aproximar empresários em contextos
             onde relações ganham profundidade, oportunidades surgem naturalmente e
             novas perspectivas são construídas.
           </p>
-          <p className="text-white/55 text-base leading-[2]">
+          <p className="text-[#EDE8D9] text-base leading-[2]">
             A experiência combina relacionamento estratégico, acesso privilegiado e
             vivências exclusivas que fortalecem o capital relacional de cada membro.
           </p>
@@ -124,11 +122,12 @@ export default function Benefits() {
                     src={b.image}
                     alt={b.title}
                     fill
+                    quality={100}
                     className="object-cover transition-transform duration-[2s]"
                     sizes="80vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#24322c] via-[#24322c]/60 to-transparent" />
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#24322c]/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
                 </div>
 
                 {/* Content overlay */}
@@ -144,7 +143,7 @@ export default function Benefits() {
                     {b.title}
                   </h3>
 
-                  <p className="text-white/50 text-sm md:text-base max-w-lg leading-relaxed">
+                  <p className="text-[#EDE8D9] text-sm md:text-base max-w-lg leading-relaxed">
                     {b.copy}
                   </p>
                 </div>

@@ -22,7 +22,7 @@ export default function DSX() {
             sizes="100vw"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#24322c] via-[#24322c]/85 to-[#24322c]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/85 to-black" />
       </div>
 
       <div className="relative z-10 max-w-[1600px] mx-auto px-8 md:px-12 py-40">
@@ -38,12 +38,12 @@ export default function DSX() {
 
           {/* Right — Body */}
           <div data-reveal-blur className="space-y-6 max-w-lg">
-            <p className="text-white/60 text-base md:text-lg leading-[1.9]">
+            <p className="text-[#EDE8D9] text-base md:text-lg leading-[1.9]">
               Nos dias <strong className="text-white">23 e 24</strong>, empresários,
               fundadores e líderes da Região Norte terão acesso à apresentação da
               comunidade e ao processo de ingresso para a primeira turma de membros.
             </p>
-            <p className="text-white/55 text-base leading-[2]">
+            <p className="text-[#EDE8D9] text-base leading-[2]">
               Mais do que um lançamento, este será o início de um ambiente criado
               para conectar quem influencia o desenvolvimento da região.
             </p>

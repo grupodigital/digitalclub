@@ -17,16 +17,17 @@ export default function Hero() {
       {/* ── Full-bleed background image ── */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070"
+          src="/DOBRA-1-digitalclub.png"
           alt="Evento de negócios e networking empresarial"
           fill
           className={`object-cover transition-all duration-[3s] ease-out ${imgLoaded ? "opacity-40 scale-100" : "opacity-0 scale-105"}`}
           priority
+          quality={100}
           sizes="100vw"
           onLoad={() => setImgLoaded(true)}
         />
-        <div className="absolute inset-0 bg-[#24322c]/25" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#24322c]/80 via-transparent to-[#24322c]/60" />
+        <div className="absolute inset-0 bg-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/60" />
       </div>
 
       {/* ── Content ── */}
@@ -53,7 +54,7 @@ export default function Hero() {
             </div>
             <div className="overflow-hidden z-[1] relative">
               <p className={`font-serif font-extralight text-[9vw] md:text-[8vw] lg:text-[7vw] text-white leading-[1.1] tracking-tight transition-all duration-[1.4s] delay-[0.7s] ease-[cubic-bezier(0.16,1,0.3,1)] ${loaded ? "translate-y-0" : "translate-y-[120%]"}`}>
-                <span className="text-accent">o Norte do Brasil</span>
+                <span className="text-[#5F8970]">o Norte do Brasil</span>
               </p>
             </div>
           </div>
@@ -66,7 +67,7 @@ export default function Hero() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 border-t border-white/[0.08] pt-8">
             {/* Left — positioning */}
             <div className="flex items-center gap-8">
-              <p className="text-white/50 text-sm md:text-[15px] max-w-xl leading-relaxed">
+              <p className="text-[#EDE8D9] text-sm md:text-[15px] max-w-xl leading-relaxed">
                 O Digital Club é uma comunidade exclusiva para CEOs, donos e
                 fundadores que buscam acesso, experiências premium e conexões
                 estratégicas de alto valor.

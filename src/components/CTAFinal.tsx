@@ -37,9 +37,10 @@ export default function CTAFinal() {
         <div className="relative min-h-[60vh] lg:min-h-screen overflow-hidden">
           <div data-scale-in className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069"
+              src="/image-form.png"
               alt="Evento exclusivo"
               fill
+              quality={100}
               className="object-cover"
               sizes="50vw"
             />
@@ -57,12 +58,12 @@ export default function CTAFinal() {
 
               {/* Supporting copy */}
               <div className="space-y-5 max-w-md">
-                <p className="text-white/55 text-[15px] leading-[1.9]">
+                <p className="text-[#EDE8D9] text-[15px] leading-[1.9]">
                   O Digital Club é para empresários que entendem que crescimento
                   também depende de acesso, relacionamento e presença nos ambientes
                   certos.
                 </p>
-                <p className="text-white/55 text-[15px] leading-[1.9]">
+                <p className="text-[#EDE8D9] text-[15px] leading-[1.9]">
                   Se você é CEO, dono ou fundador e deseja fazer parte de uma
                   comunidade empresarial exclusiva, envie sua aplicação para
                   avaliação.

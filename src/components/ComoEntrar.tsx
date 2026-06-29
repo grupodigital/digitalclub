@@ -37,11 +37,11 @@ export default function ComoEntrar() {
           </h2>
 
           <div data-reveal-blur className="space-y-6 max-w-lg">
-            <p className="text-white/55 text-base leading-[2]">
+            <p className="text-[#EDE8D9] text-base leading-[2]">
               O Digital Club foi criado para preservar a qualidade das relações
               entre seus membros.
             </p>
-            <p className="text-white/55 text-base leading-[2]">
+            <p className="text-[#EDE8D9] text-base leading-[2]">
               Por isso, o processo de entrada não funciona como uma compra comum.
               Cada aplicação passa por análise para entender a aderência do
               candidato ao momento, aos objetivos e ao nível da comunidade.
@@ -65,7 +65,7 @@ export default function ComoEntrar() {
               <h3 className="font-serif font-extralight text-xl md:text-2xl text-white tracking-tight leading-tight mb-5">
                 {step.title}
               </h3>
-              <p className="text-white/50 text-sm md:text-[15px] leading-[1.9]">
+              <p className="text-[#EDE8D9] text-sm md:text-[15px] leading-[1.9]">
                 {step.copy}
               </p>
             </div>

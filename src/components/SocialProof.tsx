@@ -30,13 +30,13 @@ export default function SocialProof() {
           </h2>
           <div className="flex items-end">
             <div data-reveal-blur className="space-y-6 max-w-md">
-              <p className="text-white/55 text-base leading-[2]">
+              <p className="text-[#EDE8D9] text-base leading-[2]">
                 O Digital Club não é uma comunidade aberta. Cada membro passa por um
                 processo de curadoria para garantir que as relações construídas dentro
                 do clube mantenham o nível de confiança, relevância e troca que a
                 experiência exige.
               </p>
-              <p className="text-white/55 text-base leading-[2]">
+              <p className="text-[#EDE8D9] text-base leading-[2]">
                 A força da comunidade está na qualidade dos empresários que a compõem.
                 Por isso, reunimos líderes que compartilham valores semelhantes: visão
                 de longo prazo, protagonismo empresarial e desejo genuíno de construir
