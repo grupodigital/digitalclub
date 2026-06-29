@@ -30,7 +30,7 @@ export default function ComoEntrar() {
 
       <div className="max-w-[1600px] mx-auto px-8 md:px-12 py-40">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mb-24 items-end">
-          <h2 data-reveal className="font-serif font-extralight text-fluid-xl text-white tracking-tight max-w-4xl">
+          <h2 data-reveal className="font-serif font-extralight text-[clamp(1.3rem,2.7vw,2.8rem)] text-white tracking-tight leading-[1.1] max-w-4xl">
             A entrada acontece
             <br />
             por aplicação e <span className="text-gradient">curadoria</span>

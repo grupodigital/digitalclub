@@ -24,21 +24,21 @@ const benefits = [
     title: "Acesso ao\nEcossistema",
     highlight: "Grupo Digital",
     copy: "Esteja próximo dos bastidores, eventos, iniciativas e conexões que fazem parte do maior ecossistema de negócios e inovação da Região Norte.",
-    image: "/ECOSSISTEMA.png",
+    image: "/ecossistema_digital_club.png",
   },
   {
     num: "04",
     title: "Oportunidades\nde Negócio",
     highlight: "Apresentações estratégicas",
     copy: "Amplie seu alcance por meio de apresentações estratégicas, conexões qualificadas e relacionamentos construídos com confiança.",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2070",
+    image: "/oportunidade_digital_club.png",
   },
   {
     num: "05",
     title: "Posicionamento",
     highlight: "Comunidade de referência",
     copy: "Faça parte de uma comunidade reconhecida por reunir empresários que lideram empresas relevantes e contribuem para o desenvolvimento da região.",
-    image: "/POSICIONAMENTO.png",
+    image: "/posicionamento_digital_club.png",
   },
 ];
 

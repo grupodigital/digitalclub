@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Check } from "lucide-react";
 
@@ -21,12 +20,10 @@ export default function SocialProof() {
 
       <div className="max-w-[1600px] mx-auto px-8 md:px-12 py-40">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mb-32">
-          <h2 data-reveal className="font-serif font-extralight text-fluid-xl text-white tracking-tight leading-[0.95]">
-            O valor de uma
+          <h2 data-reveal className="font-serif font-extralight text-[clamp(1.3rem,2.7vw,2.8rem)] text-white tracking-tight leading-[1.1]">
+            O valor de uma comunidade
             <br />
-            comunidade é definido
-            <br />
-            por <span className="text-gradient">quem faz parte dela</span>
+            é definido por <span className="text-gradient">quem faz parte dela</span>
           </h2>
           <div className="flex items-end">
             <div data-reveal-blur className="space-y-6 max-w-md">
@@ -44,21 +41,6 @@ export default function SocialProof() {
               </p>
             </div>
           </div>
-        </div>
-
-        {/* Ambient image band */}
-        <div data-reveal-scale className="relative aspect-video md:aspect-[21/9] overflow-hidden mb-32">
-          <div data-scale-in className="absolute inset-0">
-            <Image
-              src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069"
-              alt="Empresários e líderes em ambiente de curadoria do Digital Club"
-              fill
-              className="object-cover"
-              sizes="100vw"
-            />
-          </div>
-          <div className="absolute inset-0 bg-[#000000]/55" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent" />
         </div>
 
         {/* Member profiles — Destaques */}
