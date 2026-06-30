@@ -29,47 +29,63 @@ export default function ComoEntrar() {
       <div className="section-divider" />
 
       <div className="max-w-[1600px] mx-auto px-8 md:px-12 py-40">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mb-24 items-end">
-          <h2 data-reveal className="font-serif font-extralight text-[clamp(1.3rem,2.7vw,2.8rem)] text-white tracking-tight leading-[1.1] max-w-4xl">
-            A entrada acontece
-            <br />
-            por aplicação e <span className="text-gradient">curadoria</span>
-          </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mb-20 items-start">
+          {/* Esquerda — título + descrição */}
+          <div>
+            {/* Kicker decorativo */}
+            <div aria-hidden="true" className="mb-10 flex items-center gap-3">
+              <span className="h-px w-12 bg-accent/50" />
+              <span className="h-1 w-1 rounded-full bg-accent/50" />
+            </div>
 
-          <div data-reveal-blur className="space-y-6 max-w-lg">
-            <p className="text-[#EDE8D9] text-base leading-[2]">
-              O Digital Club foi criado para preservar a qualidade das relações
-              entre seus membros.
-            </p>
-            <p className="text-[#EDE8D9] text-base leading-[2]">
-              Por isso, o processo de entrada não funciona como uma compra comum.
-              Cada aplicação passa por análise para entender a aderência do
-              candidato ao momento, aos objetivos e ao nível da comunidade.
-            </p>
-          </div>
-        </div>
+            <h2 className="font-serif font-extralight text-[clamp(1.3rem,2.7vw,2.8rem)] text-white tracking-tight leading-[1.1]">
+              A entrada acontece
+              <br />
+              por aplicação e <span className="text-gradient">curadoria</span>
+            </h2>
 
-        {/* Steps */}
-        <div data-stagger className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/[0.04] border border-white/[0.04] mb-20">
-          {steps.map((step) => (
-            <div
-              key={step.num}
-              className="bg-[#24322c] p-10 md:p-12 group hover:bg-[#1f2b25] transition-colors duration-500"
-            >
-              <div className="flex items-center gap-4 mb-10">
-                <span className="font-display font-bold text-5xl md:text-6xl text-accent/80 leading-none">
-                  {step.num}
-                </span>
-                <div className="flex-1 h-px bg-white/[0.06] group-hover:bg-accent/20 transition-colors duration-500" />
-              </div>
-              <h3 className="font-serif font-extralight text-xl md:text-2xl text-white tracking-tight leading-tight mb-5">
-                {step.title}
-              </h3>
-              <p className="text-[#EDE8D9] text-sm md:text-[15px] leading-[1.9]">
-                {step.copy}
+            <div className="mt-10 space-y-6 max-w-lg">
+              <p className="text-[#EDE8D9] text-base leading-[2]">
+                O Digital Club foi criado para preservar a qualidade das relações
+                entre seus membros.
+              </p>
+              <p className="text-[#EDE8D9] text-base leading-[2]">
+                Por isso, o processo de entrada não funciona como uma compra comum.
+                Cada aplicação passa por análise para entender a aderência do
+                candidato ao momento, aos objetivos e ao nível da comunidade.
               </p>
             </div>
-          ))}
+
+            {/* Traços decorativos */}
+            <div aria-hidden="true" className="mt-16 flex items-center gap-2">
+              <span className="h-px w-24 bg-gradient-to-r from-accent/40 to-transparent" />
+              <span className="h-px w-6 bg-accent/25" />
+              <span className="h-px w-2 bg-accent/15" />
+            </div>
+          </div>
+
+          {/* Direita — timeline vertical */}
+          <div className="relative">
+            <div className="absolute left-8 top-8 bottom-8 w-px overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-b from-accent/0 via-accent/30 to-accent/0" />
+              <div className="timeline-streak-y absolute left-0 w-full h-[18%] bg-gradient-to-b from-transparent via-accent to-transparent" />
+            </div>
+            <div className="space-y-12">
+              {steps.map((step) => (
+                <div key={step.num} className="relative pl-24">
+                  <div className="absolute left-0 top-0 z-10 flex h-16 w-16 items-center justify-center rounded-full border border-accent/40 bg-[#1f2b25] shadow-[0_0_0_8px_#24322c]">
+                    <span className="font-display font-bold text-xl text-accent">
+                      {step.num}
+                    </span>
+                  </div>
+                  <h3 className="font-serif font-extralight text-xl text-white tracking-tight leading-tight mt-1 mb-3">
+                    {step.title}
+                  </h3>
+                  <p className="text-[#EDE8D9] text-sm leading-[1.9]">{step.copy}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* CTA */}

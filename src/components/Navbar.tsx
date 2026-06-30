@@ -26,8 +26,10 @@ export default function Navbar() {
     <>
       <nav
         aria-label="Navegação principal"
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 mix-blend-difference ${
-          scrolled ? "" : ""
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          scrolled
+            ? "bg-black/40 backdrop-blur-md border-b border-white/[0.06]"
+            : "bg-transparent border-b border-transparent"
         }`}
       >
         <div className="max-w-[1600px] mx-auto px-8 md:px-12 flex items-center justify-between h-24">
@@ -68,7 +70,7 @@ export default function Navbar() {
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={menuOpen}
-            className="lg:hidden relative z-10 text-white mix-blend-difference"
+            className="lg:hidden relative z-10 text-white"
           >
             {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>

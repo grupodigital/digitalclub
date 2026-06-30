@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const offerings = [
@@ -65,7 +66,7 @@ export default function ExperienciaMembro() {
     <section id="experiencia" ref={ref} className="relative bg-[#000000]">
       <div className="section-divider" />
 
-      <div className="max-w-[1600px] mx-auto px-8 md:px-12 py-40">
+      <div className="max-w-[1600px] mx-auto px-8 md:px-12 pt-40 pb-20">
         {/* Header — eyebrow */}
         <div data-reveal-left className="flex items-center gap-6 mb-16">
           <span className="text-accent/80 text-[11px] uppercase tracking-[0.4em]">
@@ -76,33 +77,57 @@ export default function ExperienciaMembro() {
           </div>
         </div>
 
-        {/* Headline + intro — coluna única */}
-        <div className="mb-24">
-          <h2 data-reveal className="font-serif font-extralight text-[clamp(0.5rem,2vw,2.4rem)] whitespace-nowrap text-white tracking-tight leading-[1.1]">
-            Uma comunidade exclusiva para acessar repertório, conexões e{" "}
-            <span className="text-gradient">oportunidades de alto valor</span>
-          </h2>
+        {/* Headline + descrição + foto — 2 colunas */}
+        <div className="mb-24 grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-12 lg:gap-16 items-center">
+          {/* Esquerda — título + descrição */}
+          <div>
+            <h2 className="font-serif font-extralight text-[1.75rem] sm:text-[2rem] lg:text-[clamp(1.1rem,2.3vw,2.4rem)] text-white tracking-tight leading-[1.15]">
+              Uma comunidade exclusiva para acessar repertório,
+              <br />
+              conexões e <span className="text-gradient">oportunidades de alto valor</span>
+            </h2>
 
-          <div className="mt-10 space-y-6 max-w-3xl">
-            <p className="text-[#EDE8D9] text-base leading-[2]">
-              O Digital Club reúne encontros estratégicos, mentorias,
-              experiências, formações e uma comunidade ativa para aproximar
-              empresários das pessoas, conversas e decisões certas.
-            </p>
-            <p className="text-[#EDE8D9] text-base leading-[2]">
-              Cada entrega foi desenhada para ampliar visão, fortalecer
-              relacionamento e gerar mais acesso dentro do ecossistema do Grupo
-              Digital.
-            </p>
+            <div className="mt-10 space-y-6 max-w-xl">
+              <p className="text-[#EDE8D9] text-base leading-[2]">
+                O Digital Club reúne encontros estratégicos, mentorias,
+                experiências, formações e uma comunidade ativa para aproximar
+                empresários das pessoas, conversas e decisões certas.
+              </p>
+              <p className="text-[#EDE8D9] text-base leading-[2]">
+                Cada entrega foi desenhada para ampliar visão, fortalecer
+                relacionamento e gerar mais acesso dentro do ecossistema do Grupo
+                Digital.
+              </p>
+            </div>
+          </div>
+
+          {/* Foto */}
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-white/[0.08]">
+            <Image
+              src="/image_benefits_section.png"
+              alt="Experiência dos membros do Digital Club"
+              fill
+              quality={100}
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 40vw"
+            />
           </div>
         </div>
 
         {/* Offering cards */}
-        <div data-stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="relative">
+          {/* Glow ambiente para realçar o vidro */}
+          <div className="pointer-events-none absolute -inset-8 -z-10 overflow-hidden">
+            <div className="absolute -top-10 left-1/4 h-72 w-72 rounded-full bg-[#5F8970]/20 blur-[120px]" />
+            <div className="absolute top-1/3 right-1/4 h-72 w-72 rounded-full bg-[#5F8970]/20 blur-[130px]" />
+            <div className="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-[#5F8970]/15 blur-[120px]" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {offerings.map((item) => (
             <div
               key={item.name}
-              className="group relative flex flex-col rounded-2xl border border-white/[0.08] bg-white/[0.02] backdrop-blur-sm p-8 transition-colors duration-500 hover:bg-white/[0.04] hover:border-white/[0.14]"
+              className="group relative flex flex-col rounded-2xl border border-white/15 bg-gradient-to-b from-[#2f4138]/70 to-[#24322c]/35 backdrop-blur-xl p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] transition-all duration-500 hover:border-white/30 hover:from-[#36493f]/85 hover:to-[#24322c]/50"
             >
               {/* Label + divider */}
               <span className="text-accent text-[11px] uppercase tracking-[0.25em]">
@@ -140,10 +165,18 @@ export default function ExperienciaMembro() {
               )}
             </div>
           ))}
+          </div>
         </div>
 
         {/* Bônus exclusivos */}
-        <div className="mt-20 rounded-2xl border border-accent/20 bg-accent/[0.03] p-8 md:p-12">
+        <div className="relative mt-20">
+          {/* Glow ambiente para realçar o vidro */}
+          <div className="pointer-events-none absolute -inset-6 -z-10 overflow-hidden">
+            <div className="absolute top-0 left-1/4 h-64 w-64 rounded-full bg-[#5F8970]/20 blur-[120px]" />
+            <div className="absolute bottom-0 right-1/4 h-64 w-64 rounded-full bg-[#5F8970]/20 blur-[120px]" />
+          </div>
+
+          <div className="rounded-2xl border border-white/15 bg-gradient-to-b from-[#2f4138]/70 to-[#24322c]/35 backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] p-8 md:p-12">
           <div className="flex items-center gap-5 mb-10">
             <span className="text-accent text-[11px] uppercase tracking-[0.35em]">
               Bônus exclusivos
@@ -165,6 +198,7 @@ export default function ExperienciaMembro() {
                 </div>
               </div>
             ))}
+          </div>
           </div>
         </div>
 

@@ -11,7 +11,7 @@ export function useScrollReveal() {
 
     // ── Intersection Observer for reveal animations ──
     const revealTargets = el.querySelectorAll(
-      "[data-reveal], [data-reveal-left], [data-reveal-right], [data-reveal-scale], [data-reveal-blur], [data-stagger], [data-img-reveal], [data-line-grow]"
+      "[data-reveal], [data-reveal-left], [data-reveal-right], [data-reveal-scale], [data-reveal-blur], [data-stagger], [data-img-reveal], [data-line-grow], [data-grow]"
     );
 
     const observer = new IntersectionObserver(
@@ -70,6 +70,15 @@ export function useScrollReveal() {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const winH = window.innerHeight;
+
+      // Fallback: revela elementos ao entrarem na viewport (garante que nada fique invisível)
+      revealTargets.forEach((item) => {
+        if (item.classList.contains("is-visible")) return;
+        const rect = item.getBoundingClientRect();
+        if (rect.top < winH - 40 && rect.bottom > 0) {
+          item.classList.add("is-visible");
+        }
+      });
 
       parallaxEls.forEach((item) => {
         const el = item as HTMLElement;

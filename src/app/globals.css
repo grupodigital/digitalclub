@@ -116,6 +116,25 @@ body {
   animation: marquee 50s linear infinite;
 }
 
+/* Brilho que percorre a linha da timeline */
+@keyframes timeline-streak-x {
+  0% { left: -30%; }
+  30%, 100% { left: 130%; }
+}
+
+@keyframes timeline-streak-y {
+  0% { top: -30%; }
+  30%, 100% { top: 130%; }
+}
+
+.timeline-streak-x {
+  animation: timeline-streak-x 5s ease-in-out infinite;
+}
+
+.timeline-streak-y {
+  animation: timeline-streak-y 5s ease-in-out infinite;
+}
+
 /* ════════════════ SCROLL REVEAL ════════════════ */
 
 [data-reveal] {
@@ -380,4 +399,18 @@ body {
   opacity: 1;
   filter: blur(0);
   transform: translateY(0);
+}
+
+/* Grow reveal — inicia pequeno e cresce ao entrar na tela */
+[data-grow] {
+  opacity: 0;
+  transform: scale(0.7);
+  transform-origin: left center;
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-grow].is-visible {
+  opacity: 1;
+  transform: scale(1);
 }

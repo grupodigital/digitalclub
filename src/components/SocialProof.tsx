@@ -18,15 +18,17 @@ export default function SocialProof() {
     <section id="quem" ref={ref} className="relative bg-[#000000]">
       <div className="section-divider" />
 
-      <div className="max-w-[1600px] mx-auto px-8 md:px-12 py-40">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mb-32">
-          <h2 data-reveal className="font-serif font-extralight text-[clamp(1.3rem,2.7vw,2.8rem)] text-white tracking-tight leading-[1.1]">
-            O valor de uma comunidade
-            <br />
-            é definido por <span className="text-gradient">quem faz parte dela</span>
-          </h2>
-          <div className="flex items-end">
-            <div data-reveal-blur className="space-y-6 max-w-md">
+      <div className="max-w-[1600px] mx-auto px-8 md:px-12 pt-20 pb-40">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center justify-center">
+          {/* Esquerda — título + descrição */}
+          <div>
+            <h2 className="font-serif font-extralight text-[clamp(1.3rem,2.7vw,2.8rem)] text-white tracking-tight leading-[1.1]">
+              O valor de uma comunidade
+              <br />
+              é definido por <span className="text-gradient">quem faz parte dela</span>
+            </h2>
+
+            <div className="mt-10 space-y-6 max-w-md">
               <p className="text-[#EDE8D9] text-base leading-[2]">
                 O Digital Club não é uma comunidade aberta. Cada membro passa por um
                 processo de curadoria para garantir que as relações construídas dentro
@@ -41,28 +43,32 @@ export default function SocialProof() {
               </p>
             </div>
           </div>
-        </div>
 
-        {/* Member profiles — Destaques */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
-          <div className="lg:col-span-4">
-            <span data-reveal-left className="text-accent/80 text-[11px] uppercase tracking-[0.4em]">
+          {/* Direita — Destaques */}
+          <div className="relative">
+            {/* Glow ambiente para realçar o vidro */}
+            <div className="pointer-events-none absolute -inset-6 -z-10 overflow-hidden">
+              <div className="absolute -top-10 right-0 h-64 w-64 rounded-full bg-[#5F8970]/25 blur-[110px]" />
+              <div className="absolute bottom-0 -left-10 h-72 w-72 rounded-full bg-[#5F8970]/30 blur-[120px]" />
+            </div>
+
+            <span className="text-accent/80 text-[11px] uppercase tracking-[0.4em]">
               Destaques
             </span>
-          </div>
-
-          <div data-stagger className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-px bg-white/[0.04] border border-white/[0.04]">
-            {profiles.map((profile) => (
-              <div
-                key={profile}
-                className="flex items-center gap-4 bg-[#000000] px-8 py-8 group hover:bg-[#0d0d0d] transition-colors duration-500"
-              >
-                <div className="w-9 h-9 flex-shrink-0 border border-accent/30 flex items-center justify-center group-hover:border-accent/60 transition-colors duration-500">
-                  <Check className="w-4 h-4 text-accent" />
+            <div className="mt-6 space-y-4">
+              {profiles.map((profile) => (
+                <div
+                  key={profile}
+                  className="group flex items-center gap-4 rounded-2xl border border-white/15 bg-gradient-to-b from-[#2f4138]/70 to-[#24322c]/35 backdrop-blur-xl px-7 py-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] transition-all duration-500 hover:border-white/30 hover:from-[#36493f]/85 hover:to-[#24322c]/50"
+                >
+                  <div className="w-10 h-10 flex-shrink-0 rounded-xl border border-white/20 bg-white/[0.08] flex items-center justify-center group-hover:border-accent/60 transition-colors duration-500">
+                    <Check className="w-4 h-4 text-accent" />
+                  </div>
+                  <span className="text-white text-[15px] md:text-base">{profile}</span>
                 </div>
-                <span className="text-white/80 text-[15px] md:text-base">{profile}</span>
-              </div>
-            ))}
+              ))}
+            </div>
+
           </div>
         </div>
       </div>
