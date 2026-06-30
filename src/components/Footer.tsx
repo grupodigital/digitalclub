@@ -13,7 +13,7 @@ export default function Footer() {
             alt="Digital Club"
             width={200}
             height={70}
-            className="w-[160px] md:w-[200px] h-auto opacity-[0.2] brightness-0 invert"
+            className="w-[160px] md:w-[200px] h-auto brightness-0 invert"
           />
           <a
             href="#"

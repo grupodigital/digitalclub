@@ -83,7 +83,7 @@ export default function CTAFinal() {
                 alt="Digital Club"
                 width={140}
                 height={50}
-                className="w-[100px] h-auto opacity-20 brightness-0 invert"
+                className="w-[100px] h-auto brightness-0 invert"
               />
             </div>
 
