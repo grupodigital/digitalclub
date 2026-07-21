@@ -48,17 +48,16 @@ export default function DSXPage() {
               </span>
 
               <h1 className="font-serif font-extralight text-[clamp(2.4rem,7vw,6rem)] text-white leading-[1.05] tracking-tight">
-                Faça parte do
+                Você no
                 <br />
-                <span className="text-gradient">Digital Club</span>
+                <span className="text-gradient">próximo nível</span>
               </h1>
 
               <p className="mt-10 max-w-xl text-[#EDE8D9] text-base md:text-lg leading-[1.9]">
-                Uma comunidade exclusiva para CEOs, donos e fundadores que buscam
-                acesso, experiências premium e conexões estratégicas de alto
-                valor. Envie sua aplicação e faça parte de{" "}
+                Ambiente exclusivo para empresários que desejam acelerar seus
+                negócios por meio de{" "}
                 <span className="text-accent">
-                  um ambiente criado para quem move o Norte do Brasil.
+                  conteúdo, conexões e experiências exclusivas.
                 </span>
               </p>
 
@@ -66,7 +65,7 @@ export default function DSXPage() {
                 href="#form"
                 className="btn-fill group mt-12 inline-flex items-center gap-5 px-12 py-6 border border-accent/40 text-accent hover:text-black text-[12px] uppercase tracking-[0.3em] font-medium transition-colors duration-500"
               >
-                Enviar minha aplicação
+                Saiba mais sobre o Digital Club
                 <ArrowIcon />
               </a>
             </div>
