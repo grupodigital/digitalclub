@@ -11,7 +11,6 @@ type FormData = {
   company: string;
   revenue: string;
   employees: string;
-  challenge: string;
 };
 
 const INITIAL: FormData = {
@@ -21,7 +20,6 @@ const INITIAL: FormData = {
   company: "",
   revenue: "",
   employees: "",
-  challenge: "",
 };
 
 const REVENUE_OPTIONS = [
@@ -38,13 +36,6 @@ const EMPLOYEE_OPTIONS = [
   "51 – 200",
   "201 – 500",
   "Mais de 500",
-];
-
-const CHALLENGE_OPTIONS = [
-  { value: "marketing", label: "Marketing" },
-  { value: "vendas", label: "Vendas" },
-  { value: "gestao", label: "Gestão" },
-  { value: "tech", label: "Tech" },
 ];
 
 const WEBHOOK_URL =
@@ -68,10 +59,6 @@ export default function DSXLeadForm() {
     setSubmitting(true);
     setError(null);
 
-    const challengeLabel =
-      CHALLENGE_OPTIONS.find((o) => o.value === formData.challenge)?.label ??
-      formData.challenge;
-
     const source = "digital-club-landing";
 
     try {
@@ -85,7 +72,6 @@ export default function DSXLeadForm() {
           company: formData.company,
           revenue: formData.revenue,
           employees: formData.employees,
-          challenge: challengeLabel,
           source,
           submitted_at: new Date().toISOString(),
         }),
@@ -170,27 +156,6 @@ export default function DSXLeadForm() {
           {EMPLOYEE_OPTIONS.map((opt) => (
             <option key={opt} value={opt}>
               {opt}
-            </option>
-          ))}
-        </select>
-        <ChevronDown className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 text-white/40" />
-      </div>
-
-      {/* Principal desafio */}
-      <div className="relative">
-        <select
-          name="challenge"
-          value={formData.challenge}
-          onChange={handleChange}
-          required
-          className={`${selectClass} ${formData.challenge ? "text-white" : "text-white/40"}`}
-        >
-          <option value="" disabled>
-            Principal desafio da sua empresa
-          </option>
-          {CHALLENGE_OPTIONS.map((opt) => (
-            <option key={opt.value} value={opt.value}>
-              {opt.label}
             </option>
           ))}
         </select>
