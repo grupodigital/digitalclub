@@ -41,10 +41,6 @@ export default function DSXPage() {
 
           {/* Content */}
           <div className="relative z-10 w-full px-8 md:px-16 lg:px-20 py-24 lg:py-0">
-            <span className="inline-block text-accent text-[12px] uppercase tracking-[0.35em] mb-8">
-              Ingresso por curadoria · Região Norte
-            </span>
-
             <h1 className="font-serif font-extralight text-[clamp(2.4rem,5.5vw,5rem)] text-white leading-[1.05] tracking-tight">
               Você no
               <br />
