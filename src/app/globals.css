@@ -14,6 +14,34 @@
   --font-sans: var(--font-inter);
   --font-display: var(--font-oswald);
   --font-serif: 'Cormorant Garamond', Georgia, serif;
+
+  /* ── Formulário de aplicação (/form) — tema "Verde floresta" ──
+     Tokens isolados usados apenas dentro do escopo .dc-form.
+     Fontes carregadas via next/font só na página do formulário. */
+  --color-dc-bg: #29342e;
+  --color-dc-surface: #1f2823;
+  --color-dc-surface-2: #33403a;
+
+  --color-dc-heading: #fefefe;
+  --color-dc-text: #ebe7da;
+  --color-dc-muted: #b3beb6;
+  --color-dc-placeholder: #93a099;
+
+  --color-dc-border: #3e4a44;
+  --color-dc-border-strong: #55625b;
+
+  --color-dc-accent: #8fb39c;
+  --color-dc-accent-ink: #a3c4ae;
+  --color-dc-accent-soft: #35473c;
+
+  --color-dc-cta: #ebe7da;
+  --color-dc-on-cta: #29342e;
+
+  --color-dc-error: #e4a08a;
+  --color-dc-error-soft: #3a2f2b;
+
+  --font-dc-sans: var(--font-dm-sans), 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-dc-display: var(--font-instrument-serif), 'Times New Roman', serif;
 }
 
 /* ════════════════ BASE ════════════════ */
@@ -413,4 +441,98 @@ body {
 [data-grow].is-visible {
   opacity: 1;
   transform: scale(1);
+}
+
+/* ════════════════ FORMULÁRIO DE APLICAÇÃO (/form) ════════════════
+   Estilos escopados em .dc-form para não afetar o resto do site.
+   Portado de dsx-club-form (Vite) preservando o design original. */
+.dc-form {
+  background-color: var(--color-dc-bg);
+  color: var(--color-dc-text);
+  font-family: var(--font-dc-sans);
+  font-weight: 500;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dc-form h1,
+.dc-form h2,
+.dc-form h3 {
+  font-family: var(--font-dc-display);
+  font-weight: 400; /* Instrument Serif tem um peso só */
+  color: var(--color-dc-heading);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.dc-form input,
+.dc-form textarea,
+.dc-form select {
+  font-family: var(--font-dc-sans);
+  font-weight: 500;
+}
+
+.dc-form input:-webkit-autofill,
+.dc-form textarea:-webkit-autofill,
+.dc-form select:-webkit-autofill {
+  -webkit-text-fill-color: var(--color-dc-text);
+  -webkit-box-shadow: 0 0 0 1000px var(--color-dc-surface) inset;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.dc-form ::selection {
+  background: var(--color-dc-accent);
+  color: var(--color-dc-bg);
+}
+
+.dc-form :focus-visible {
+  outline: 2px solid var(--color-dc-accent);
+  outline-offset: 2px;
+}
+
+/* Impede que o header fixo cubra o campo ao rolar até um erro */
+.dc-form input,
+.dc-form textarea,
+.dc-form select {
+  scroll-margin-top: 7rem;
+  scroll-margin-bottom: 2rem;
+}
+
+.dc-eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-dc-accent-ink);
+}
+
+.dc-rule {
+  height: 1px;
+  background: var(--color-dc-border-strong);
+}
+
+@keyframes dc-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.dc-animate-in {
+  animation: dc-fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dc-form *,
+  .dc-form *::before,
+  .dc-form *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
