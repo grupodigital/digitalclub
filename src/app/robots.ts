@@ -8,17 +8,20 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/obrigado", "/api/"],
+        // /preview = landing completa em stand by (remover deste disallow ao republicar)
+        disallow: ["/obrigado", "/preview", "/api/"],
       },
       {
         userAgent: "Googlebot",
         allow: "/",
-        disallow: ["/obrigado", "/api/"],
+        // /preview = landing completa em stand by (remover deste disallow ao republicar)
+        disallow: ["/obrigado", "/preview", "/api/"],
       },
       {
         userAgent: "Bingbot",
         allow: "/",
-        disallow: ["/obrigado", "/api/"],
+        // /preview = landing completa em stand by (remover deste disallow ao republicar)
+        disallow: ["/obrigado", "/preview", "/api/"],
       },
     ],
     sitemap: `${siteUrl}/sitemap.xml`,
