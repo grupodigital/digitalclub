@@ -46,7 +46,7 @@ export default function Comunidade() {
             height={432}
             className="h-auto w-[150px] sm:w-[170px]"
           />
-          <h2 className="mt-8 max-w-2xl text-[1.9rem] font-bold uppercase leading-[1.12] tracking-[-0.01em] sm:text-4xl lg:text-[2.9rem]">
+          <h2 className="mt-8 max-w-2xl text-[2.1rem] font-bold uppercase leading-[1.12] tracking-[-0.01em] sm:text-4xl lg:text-[3.35rem]">
             O que movimenta essa comunidade
           </h2>
         </Reveal>

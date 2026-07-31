@@ -48,7 +48,7 @@ export default function Entregas() {
             height={432}
             className="h-auto w-[150px] sm:w-[170px]"
           />
-          <h2 className="mt-8 text-3xl font-bold uppercase leading-[1.1] tracking-[-0.01em] sm:text-4xl lg:text-[3rem]">
+          <h2 className="mt-8 text-4xl font-bold uppercase leading-[1.1] tracking-[-0.01em] sm:text-5xl lg:text-[3.4rem]">
             Entregas confirmadas para 2026
           </h2>
         </Reveal>

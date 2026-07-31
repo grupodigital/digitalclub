@@ -52,7 +52,7 @@ export default function Apoio() {
       {/* Conteúdo */}
       <div className="relative z-10 flex min-h-[88vh] items-center justify-center px-6 py-24">
         <Reveal className="mx-auto max-w-4xl text-center">
-          <h2 className="text-2xl font-bold uppercase leading-tight tracking-[-0.01em] text-white sm:text-4xl lg:text-[3rem]">
+          <h2 className="text-3xl font-bold uppercase leading-tight tracking-[-0.01em] text-white sm:text-4xl lg:text-[3.4rem]">
             Um ponto de apoio para quando você precisar
           </h2>
           <p className="mx-auto mt-5 max-w-3xl text-sm uppercase leading-relaxed tracking-wide text-white/75 sm:mt-7 sm:text-lg">

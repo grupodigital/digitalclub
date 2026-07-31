@@ -41,7 +41,7 @@ export default function Experiencias() {
             height={432}
             className="h-auto w-[150px] sm:w-[170px]"
           />
-          <h2 className="mt-8 text-2xl uppercase leading-[1.1] tracking-[-0.01em] sm:text-4xl lg:text-[2.9rem]">
+          <h2 className="mt-8 text-3xl uppercase leading-[1.1] tracking-[-0.01em] sm:text-4xl lg:text-[3.3rem]">
             <span className="font-bold">Entregas:</span>{" "}
             <span className="font-light">experiências ao longo da jornada</span>
           </h2>

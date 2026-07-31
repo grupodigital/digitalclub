@@ -34,7 +34,7 @@ export default function Movimento() {
             className="h-auto w-[150px] sm:w-[170px]"
           />
 
-          <h2 className="mt-8 max-w-xl text-3xl font-bold uppercase leading-[1.12] tracking-[-0.01em] sm:text-4xl lg:text-[2.9rem]">
+          <h2 className="mt-8 max-w-xl text-4xl font-bold uppercase leading-[1.12] tracking-[-0.01em] sm:text-5xl lg:text-[3.35rem]">
             Uma comunidade em movimento
           </h2>
 

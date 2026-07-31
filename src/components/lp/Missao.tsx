@@ -104,7 +104,7 @@ export default function Missao() {
     >
       <div className="mx-auto max-w-[1500px] px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
         <Reveal>
-          <h2 className="text-3xl font-bold uppercase tracking-[-0.01em] sm:text-4xl lg:text-5xl">
+          <h2 className="text-4xl font-bold uppercase tracking-[-0.01em] sm:text-5xl lg:text-[3.4rem]">
             Nossa Missão
           </h2>
         </Reveal>

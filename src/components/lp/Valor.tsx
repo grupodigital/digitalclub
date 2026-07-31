@@ -42,7 +42,7 @@ export default function Valor() {
 
         <div className="flex flex-1 items-center justify-center">
           <Reveal className="mx-auto max-w-4xl text-center">
-            <h2 className="text-2xl font-bold uppercase leading-tight tracking-[-0.01em] sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-bold uppercase leading-tight tracking-[-0.01em] sm:text-4xl lg:text-[3.4rem]">
               O maior valor é quem está ao seu lado
             </h2>
             <p className="mx-auto mt-6 max-w-3xl text-sm uppercase leading-relaxed tracking-wide text-primary/75 sm:mt-8 sm:text-lg">
