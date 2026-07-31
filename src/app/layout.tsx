@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Oswald } from "next/font/google";
+import { Poppins, Oswald } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
@@ -16,7 +16,7 @@ const oswald = Oswald({
   display: "swap",
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://digitalclub.pt";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://digitalclub.com.vc";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -314,7 +314,7 @@ export default function RootLayout({
   ];
 
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${oswald.variable} antialiased`}>
+    <html lang="pt-BR" className={`${poppins.variable} ${oswald.variable} antialiased`}>
       <body className="min-h-screen">
         {allSchemas.map((schema, i) => (
           <script
