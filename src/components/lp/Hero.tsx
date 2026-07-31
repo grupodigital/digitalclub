@@ -50,8 +50,8 @@ export default function Hero() {
       </span>
 
       {/* Conteúdo central */}
-      <div className="relative z-20 flex w-full flex-1 flex-col items-center justify-center px-6 text-center">
-        <h1 className="animate-hero-up animate-hero-up-d2 m-0 w-[min(82vw,820px)] max-w-full">
+      <div className="relative z-20 flex w-full flex-1 flex-col items-center justify-center px-6 text-center sm:justify-start sm:pt-[34vh]">
+        <h1 className="animate-hero-up animate-hero-up-d2 m-0 w-[min(78vw,300px)] max-w-full sm:w-[min(53vw,1010px)]">
           <span className="sr-only">Digital Club</span>
           <Image
             src="/LOGO-DIGITAL-CLUB-PNG.png"
@@ -63,16 +63,16 @@ export default function Hero() {
           />
         </h1>
 
-        <p className="animate-hero-up animate-hero-up-d3 mt-4 max-w-[92%] text-base font-light tracking-wide text-white/75 sm:mt-6 sm:max-w-none sm:text-xl">
+        <p className="animate-hero-up animate-hero-up-d3 mt-5 max-w-[92%] text-lg font-light text-white/80 sm:mt-[6vh] sm:max-w-none sm:text-3xl xl:text-4xl">
           O clube de empresários da Região Norte
         </p>
 
-        <div className="animate-hero-up animate-hero-up-d4 mt-10 h-px w-full max-w-[360px] bg-gradient-to-r from-transparent via-accent/45 to-transparent sm:mt-14" />
+        <div className="animate-hero-up animate-hero-up-d4 mt-12 h-px w-[72%] max-w-[720px] bg-gradient-to-r from-transparent via-accent/45 to-transparent sm:mt-[11vh]" />
       </div>
 
       {/* Tagline base */}
-      <div className="relative z-20 px-6 pb-8 sm:pb-12">
-        <p className="animate-hero-up animate-hero-up-d5 mx-auto max-w-5xl text-center text-[0.7rem] uppercase leading-relaxed tracking-[0.18em] text-white/70 sm:text-sm sm:tracking-[0.22em]">
+      <div className="relative z-20 px-6 pb-14 sm:pb-[8vh]">
+        <p className="animate-hero-up animate-hero-up-d5 mx-auto max-w-6xl text-center text-[0.72rem] uppercase leading-relaxed tracking-[0.14em] text-white/75 sm:text-sm sm:tracking-[0.16em]">
           Um ambiente para ampliar visão, construir conexões e gerar novas
           oportunidades de negócio.
         </p>
