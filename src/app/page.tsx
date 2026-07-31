@@ -1,76 +1,52 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Hero from "@/components/lp/Hero";
+import Momento from "@/components/lp/Momento";
+import Apoio from "@/components/lp/Apoio";
+import Comunidade from "@/components/lp/Comunidade";
+import Missao from "@/components/lp/Missao";
+import Entregas from "@/components/lp/Entregas";
+import Experiencias from "@/components/lp/Experiencias";
+import Movimento from "@/components/lp/Movimento";
+import Valor from "@/components/lp/Valor";
+import Crescimento from "@/components/lp/Crescimento";
+import Fecho from "@/components/lp/Fecho";
 
 /**
- * Home atual — página "Em Breve".
+ * Home — nova landing do Digital Club.
  *
- * A landing completa não foi removida: está em stand by em /preview
- * (src/app/preview/page.tsx), fora dos índices de busca.
+ * Montada seção por seção em src/components/lp. Substitui a antiga
+ * página "Em Breve". A landing anterior segue em stand by em /preview.
  */
 export const metadata: Metadata = {
-  title: "Digital Club | Em Breve",
+  title: "Digital Club | O clube de empresários da Região Norte",
   description:
-    "O Digital Club está preparando algo novo. Em breve, a comunidade exclusiva para CEOs, fundadores e donos de negócios da Região Norte do Brasil.",
+    "O Digital Club é o clube de empresários da Região Norte. Um ambiente para ampliar visão, construir conexões e gerar novas oportunidades de negócio.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Digital Club | Em Breve",
+    title: "Digital Club | O clube de empresários da Região Norte",
     description:
-      "O Digital Club está preparando algo novo. Em breve, a comunidade exclusiva para CEOs, fundadores e donos de negócios da Região Norte do Brasil.",
+      "Um ambiente para ampliar visão, construir conexões e gerar novas oportunidades de negócio.",
   },
 };
 
 export default function Home() {
   return (
-    <div className="grain relative flex min-h-screen flex-col overflow-hidden">
-      {/* Glow radial de fundo */}
-      <div
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse 60% 50% at 50% 40%, rgba(241, 231, 219, 0.08) 0%, transparent 70%)",
-        }}
-      />
-
-      {/* Linha de destaque — topo */}
-      <div className="animate-line-expand absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
-
-      {/* Conteúdo */}
-      <main className="relative z-10 flex flex-1 flex-col items-center justify-center px-6 py-24 text-center">
-        {/* Logo */}
-        <div className="animate-hero-up animate-hero-up-d1 mb-14">
-          <Image
-            src="/LOGO-DIGITAL-CLUB-PNG.png"
-            alt="Digital Club"
-            width={200}
-            height={68}
-            priority
-            className="h-auto w-[150px] opacity-90 brightness-0 invert sm:w-[200px]"
-          />
-        </div>
-
-        {/* Divisor */}
-        <div className="animate-hero-up animate-hero-up-d2 mb-10 h-px w-24 bg-gradient-to-r from-transparent via-accent to-transparent" />
-
-        {/* Título */}
-        <h1 className="animate-hero-up animate-hero-up-d2 font-display text-fluid-lg uppercase tracking-wider text-white/90">
-          Em Breve
-        </h1>
-
-        {/* Subtítulo */}
-        <p className="animate-hero-up animate-hero-up-d3 mt-8 max-w-xl text-base leading-relaxed text-white/50 sm:text-lg">
-          Estamos preparando algo extraordinário.
-          <br className="hidden sm:block" />
-          A comunidade que reúne quem move o Norte do Brasil volta em breve.
-        </p>
-
-        {/* Divisor */}
-        <div className="animate-hero-up animate-hero-up-d4 mt-12 h-px w-16 bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
+    <div className="grain">
+      <main>
+        <Hero />
+        <Momento />
+        <Apoio />
+        <Comunidade />
+        <Missao />
+        <Entregas />
+        <Experiencias />
+        <Movimento />
+        <Valor />
+        <Crescimento />
+        <Fecho />
       </main>
-
-      {/* Linha de destaque — base */}
-      <div className="animate-line-expand absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
     </div>
   );
 }
