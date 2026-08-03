@@ -9,6 +9,7 @@ import Experiencias from "@/components/lp/Experiencias";
 import Movimento from "@/components/lp/Movimento";
 import Valor from "@/components/lp/Valor";
 import Crescimento from "@/components/lp/Crescimento";
+import Aplicacao from "@/components/lp/Aplicacao";
 import Fecho from "@/components/lp/Fecho";
 
 /**
@@ -45,6 +46,7 @@ export default function Home() {
         <Movimento />
         <Valor />
         <Crescimento />
+        <Aplicacao />
         <Fecho />
       </main>
     </div>
