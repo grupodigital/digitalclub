@@ -7,6 +7,10 @@ import { FIELDS, INITIAL_VALUES, type FormValues } from "@/lib/form/config";
 
 const REQUIRED = FIELDS.filter((f) => f.required);
 
+/** Link de agendamento (GoHighLevel) para onde o usuário é enviado após o envio. */
+const BOOKING_URL =
+  "https://api.leadconnectorhq.com/widget/booking/s6M4kpXs21xunqf5SHdh";
+
 /**
  * Versão embutida do formulário de /form para a home.
  *
@@ -17,6 +21,16 @@ const REQUIRED = FIELDS.filter((f) => f.required);
 export default function AplicacaoForm() {
   const [values, setValues] = useState<FormValues>(INITIAL_VALUES);
   const [submitted, setSubmitted] = useState<FormValues | null>(null);
+
+  /**
+   * Envio confirmado no webhook: mostra a tela de sucesso e encaminha o usuário
+   * para o agendamento. O SuccessScreen fica como fallback caso o redirect não
+   * complete (ex.: pop-up/navegação bloqueada).
+   */
+  const handleSuccess = (data: FormValues) => {
+    setSubmitted(data);
+    window.location.href = BOOKING_URL;
+  };
 
   const progress = useMemo(() => {
     if (submitted) return 1;
@@ -49,7 +63,7 @@ export default function AplicacaoForm() {
         <ApplicationForm
           values={values}
           setValues={setValues}
-          onSuccess={setSubmitted}
+          onSuccess={handleSuccess}
         />
       )}
     </div>
