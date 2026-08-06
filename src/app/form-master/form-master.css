@@ -1,0 +1,446 @@
+/* ─────────────────────────────────────────────────────────────
+   FORMULÁRIO MASTER (/form-master)
+   Tudo escopado em .dc-form-master para não vazar no resto do site.
+   ───────────────────────────────────────────────────────────── */
+
+.dc-form-master {
+  --fm-green: #24322c;
+  --fm-green-deep: #1b2621;
+  --fm-cream: #f1e7db;
+  --fm-gray: #dadada;
+  --fm-gray-muted: rgba(218, 218, 218, 0.55);
+  --fm-gold: #c6a664;
+  --fm-line: rgba(241, 231, 219, 0.16);
+
+  min-height: 100dvh;
+  /* Faz o seletor de data e a lista do select nascerem escuros no Chrome. */
+  color-scheme: dark;
+  background: var(--fm-green);
+  background-image:
+    radial-gradient(ellipse 900px 500px at 15% -5%, rgba(198, 166, 100, 0.07), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 100% 20%, rgba(241, 231, 219, 0.05), transparent 55%);
+  color: var(--fm-gray);
+  font-family: var(--font-fm-sans), "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.dc-form-master ::selection {
+  background: var(--fm-gold);
+  color: var(--fm-green-deep);
+}
+
+.dc-form-master a {
+  color: var(--fm-gold);
+}
+
+/* ---------- Top bar ---------- */
+.dc-form-master .topbar {
+  padding: 28px 24px 22px;
+  text-align: center;
+  border-bottom: 1px solid var(--fm-line);
+}
+
+.dc-form-master .topbar .wordmark {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 34px;
+  color: var(--fm-cream);
+  letter-spacing: 0.5px;
+}
+
+/* ---------- Hero ---------- */
+.dc-form-master .hero {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 56px 24px 24px;
+  text-align: center;
+}
+
+.dc-form-master .hero .eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--fm-gold);
+  margin-bottom: 18px;
+}
+
+.dc-form-master .hero h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 1.2;
+  color: var(--fm-cream);
+  margin: 0 0 20px;
+}
+
+.dc-form-master .hero p {
+  font-size: 15.5px;
+  color: var(--fm-gray-muted);
+  font-weight: 300;
+  max-width: 520px;
+  margin: 0 auto 12px;
+}
+
+/* ---------- Estrutura do formulário ---------- */
+.dc-form-master form {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 20px 24px 100px;
+}
+
+.dc-form-master .block {
+  padding: 44px 0 8px;
+  border-top: 1px solid var(--fm-line);
+  margin-top: 36px;
+}
+
+.dc-form-master .block:first-of-type {
+  margin-top: 44px;
+}
+
+.dc-form-master .block-eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--fm-gold);
+  margin-bottom: 10px;
+}
+
+.dc-form-master .block h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 27px;
+  color: var(--fm-cream);
+  margin: 0 0 8px;
+}
+
+.dc-form-master .block .block-note {
+  font-size: 13px;
+  color: var(--fm-gray-muted);
+  margin: 0 0 28px;
+  max-width: 520px;
+}
+
+.dc-form-master .field {
+  margin-bottom: 26px;
+}
+
+.dc-form-master .field label.q {
+  display: block;
+  font-size: 14.5px;
+  color: var(--fm-cream);
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.45;
+}
+
+.dc-form-master .field label.q .req {
+  color: var(--fm-gold);
+  margin-left: 4px;
+}
+
+.dc-form-master .field .hint {
+  font-size: 11.5px;
+  color: var(--fm-gray-muted);
+  margin-top: 6px;
+}
+
+/* ---------- Controles ---------- */
+.dc-form-master input[type="text"],
+.dc-form-master input[type="email"],
+.dc-form-master input[type="tel"],
+.dc-form-master input[type="url"],
+.dc-form-master input[type="date"],
+.dc-form-master input[type="number"],
+.dc-form-master textarea,
+.dc-form-master select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--fm-line);
+  color: var(--fm-cream);
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 9px 2px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+.dc-form-master textarea {
+  resize: vertical;
+  min-height: 70px;
+  line-height: 1.6;
+}
+
+.dc-form-master input::placeholder,
+.dc-form-master textarea::placeholder {
+  color: rgba(218, 218, 218, 0.35);
+}
+
+.dc-form-master input:focus,
+.dc-form-master textarea:focus,
+.dc-form-master select:focus {
+  border-bottom-color: var(--fm-gold);
+}
+
+/* Sem isto o Chrome pinta o autopreenchimento de branco sobre o verde. */
+.dc-form-master input:-webkit-autofill,
+.dc-form-master textarea:-webkit-autofill,
+.dc-form-master select:-webkit-autofill {
+  -webkit-text-fill-color: var(--fm-cream);
+  -webkit-box-shadow: 0 0 0 1000px var(--fm-green) inset;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.dc-form-master select {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3e%3cpath fill='%23C6A664' d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 2px center;
+  background-size: 18px;
+  padding-right: 24px;
+}
+
+.dc-form-master select option {
+  background: var(--fm-green);
+  color: var(--fm-cream);
+}
+
+.dc-form-master .two-col {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+
+.dc-form-master .two-col .field {
+  flex: 1 1 220px;
+  padding: 0 12px;
+  min-width: 220px;
+}
+
+/* ---------- Grupos de escolha ---------- */
+.dc-form-master .choices {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+}
+
+.dc-form-master .choices .choice {
+  margin: 5px;
+}
+
+.dc-form-master .choices.stack {
+  flex-direction: column;
+}
+
+.dc-form-master .choices.stack .choice {
+  margin: 0;
+}
+
+.dc-form-master .choice {
+  position: relative;
+}
+
+.dc-form-master .choice input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.dc-form-master .choice .pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 16px;
+  border: 1px solid var(--fm-line);
+  font-size: 13px;
+  color: var(--fm-gray);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.dc-form-master .choice input:checked + .pill {
+  border-color: var(--fm-gold);
+  color: var(--fm-cream);
+  background: rgba(198, 166, 100, 0.1);
+}
+
+.dc-form-master .choice input:focus-visible + .pill {
+  outline: 2px solid var(--fm-gold);
+  outline-offset: 2px;
+}
+
+.dc-form-master .choice .pill .mark {
+  width: 13px;
+  height: 13px;
+  margin-right: 8px;
+  border: 1px solid var(--fm-gray-muted);
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.dc-form-master .choice input[type="radio"] + .pill .mark {
+  border-radius: 50%;
+}
+
+.dc-form-master .choice input:checked + .pill .mark {
+  border-color: var(--fm-gold);
+  background: var(--fm-gold);
+}
+
+.dc-form-master .choices.stack .choice .pill {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--fm-line);
+  padding: 10px 2px;
+  background: none;
+}
+
+.dc-form-master .choices.stack .choice input:checked + .pill {
+  background: none;
+}
+
+/* ---------- Escala 0–10 ---------- */
+.dc-form-master .scale {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+
+.dc-form-master .scale .choice {
+  margin: 4px;
+}
+
+.dc-form-master .scale .choice .pill {
+  padding: 8px 0;
+  width: 34px;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--fm-line);
+}
+
+.dc-form-master .scale .choice .pill .mark {
+  display: none;
+}
+
+.dc-form-master .scale .choice input:checked + .pill {
+  background: var(--fm-gold);
+  color: var(--fm-green-deep);
+  border-color: var(--fm-gold);
+  font-weight: 500;
+}
+
+/* ---------- Envio ---------- */
+.dc-form-master .submit-wrap {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid var(--fm-line);
+  text-align: center;
+}
+
+.dc-form-master .submit-wrap p {
+  font-size: 13px;
+  color: var(--fm-gray-muted);
+  max-width: 440px;
+  margin: 0 auto 26px;
+}
+
+.dc-form-master button.submit {
+  background: var(--fm-cream);
+  color: var(--fm-green-deep);
+  border: none;
+  padding: 16px 46px;
+  font-family: inherit;
+  font-size: 12.5px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dc-form-master button.submit:hover:not(:disabled) {
+  background: var(--fm-gold);
+}
+
+.dc-form-master button.submit:disabled {
+  opacity: 0.55;
+  cursor: progress;
+}
+
+.dc-form-master .submit-error {
+  color: var(--fm-cream);
+  border: 1px solid rgba(198, 166, 100, 0.5);
+  background: rgba(198, 166, 100, 0.08);
+  padding: 14px 18px;
+  margin: 0 auto 24px;
+  font-size: 13.5px;
+  max-width: 440px;
+}
+
+/* Isca de bot — fora da tela, invisível também para leitores de tela. */
+.dc-form-master .honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ---------- Tela de sucesso ---------- */
+.dc-form-master .done {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 90px 24px 140px;
+  text-align: center;
+}
+
+.dc-form-master .done .eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--fm-gold);
+  margin-bottom: 18px;
+}
+
+.dc-form-master .done h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--fm-cream);
+  margin: 0 0 20px;
+}
+
+.dc-form-master .done p {
+  font-size: 15.5px;
+  color: var(--fm-gray-muted);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.dc-form-master .footer-note {
+  text-align: center;
+  padding: 34px 24px 50px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--fm-gray-muted);
+}
+
+@media (max-width: 600px) {
+  .dc-form-master .hero h1 {
+    font-size: 30px;
+  }
+
+  .dc-form-master .block h2 {
+    font-size: 23px;
+  }
+}

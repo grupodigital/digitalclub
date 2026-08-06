@@ -7,7 +7,7 @@ import type { MetadataRoute } from "next";
  * hoje a principal página de conversão, por isso mantém a prioridade mais alta.
  *
  * Fora do sitemap por opção:
- *  - /form e /obrigado — noindex no metadata da própria página;
+ *  - /form, /form-master e /obrigado — noindex no metadata da própria página;
  *  - /preview — landing completa em stand by, noindex + disallow no robots.ts.
  *
  * Ao republicar a landing completa como home, repor aqui as âncoras
