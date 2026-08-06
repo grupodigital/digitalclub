@@ -8,7 +8,7 @@
  * limite de campos do plano e seria impossível de manter.
  */
 
-import { BLOCKS, type FMField } from "./fields";
+import { answerFor, normalize } from "./answers";
 import type { ClickUpCustomFieldValue, ClickUpField } from "@/lib/clickup/client";
 
 /**
@@ -35,71 +35,16 @@ const CUSTOM_FIELD_MAP: Record<string, string> = {
   linkedin: "08. LinkedIn",
 };
 
-const normalize = (text: string) =>
-  text
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .trim()
-    .toLowerCase();
-
 /**
- * Normaliza nome de pessoa: sem acento, sem espa\u00e7o duplicado e sem
+ * Normaliza nome de pessoa: sem acento, sem espaço duplicado e sem
  * tratamento na frente. O cadastro tem "Dr. Thales Schincariol" e a pessoa
- * digita "Thales Schincariol" \u2014 sem isso, viraria uma tarefa duplicada.
+ * digita "Thales Schincariol" — sem isso, viraria uma tarefa duplicada.
  */
 const normalizeName = (text: string) =>
   normalize(text)
     .replace(/\b(dr|dra|sr|sra|srta|prof|profa|eng)\.?\s+/g, "")
     .replace(/\s+/g, " ")
     .trim();
-
-/** Checkbox repete o mesmo `name`; por isso getAll + junção. */
-function answerFor(data: FormData, name: string) {
-  return data
-    .getAll(name)
-    .filter((entry): entry is string => typeof entry === "string")
-    .map((entry) => entry.trim())
-    .filter(Boolean)
-    .join(", ");
-}
-
-/** Achata `row` para que a ordem das perguntas seja a ordem da tela. */
-function flatten(fields: FMField[]): Exclude<FMField, { kind: "row" }>[] {
-  return fields.flatMap((field) =>
-    field.kind === "row" ? flatten(field.fields) : [field]
-  );
-}
-
-/**
- * As respostas, agrupadas pelos mesmos blocos da tela.
- *
- * O corpo da tarefa aceita markdown; o comentário não — a API só recebe
- * `comment_text` puro, e os asteriscos apareceriam crus. Daí os dois formatos.
- */
-export function buildAnswers(data: FormData, format: "markdown" | "plain") {
-  const parts: string[] = [];
-
-  for (const block of BLOCKS) {
-    const answered = flatten(block.fields)
-      .map((field) => ({ label: field.label, value: answerFor(data, field.name) }))
-      .filter((entry) => entry.value);
-
-    if (!answered.length) continue;
-
-    const heading = `${block.eyebrow} — ${block.title}`;
-    parts.push(format === "markdown" ? `## ${heading}` : heading.toUpperCase());
-
-    for (const entry of answered) {
-      parts.push(
-        format === "markdown"
-          ? `**${entry.label}**\n\n${entry.value}`
-          : `${entry.label}\n${entry.value}`
-      );
-    }
-  }
-
-  return parts.join("\n\n");
-}
 
 /** Segue a convenção da lista: as tarefas são nomeadas só com o nome do membro. */
 export function buildTaskName(data: FormData) {
